@@ -20,40 +20,40 @@ interface Project {
 const mockProjects: Project[] = [
   {
     id: 1,
-    title: 'Meu Portfólio',
+    title: 'Consultar CEP',
     description:
       'Portfólio pessoal construído com Next.js, TypeScript e Tailwind CSS para mostrar meus projetos e habilidades.',
-    imageUrl: 'https://placehold.co/600x400',
-    tags: ['Next.js', 'TypeScript', 'Tailwind'],
-    liveUrl: '#',
-    repoUrl: 'https://github.com/seu-usuario/seu-portfolio',
+    imageUrl: '/images/consulta-cep.png',
+    tags: ['API Rest', 'Javascript', 'CSS'],
+    liveUrl: 'https://bucador-de-ceps.vercel.app/',
+    repoUrl: 'https://github.com/WillianGomes949/Buscador-de-Ceps',
   },
   {
     id: 2,
     title: 'E-commerce (Conceito)',
     description:
       'Um conceito de e-commerce com carrinho de compras, utilizando React e Context API para gerenciamento de estado.',
-    imageUrl: 'https://placehold.co/600x400',
-    tags: ['React', 'JavaScript', 'CSS'],
-    repoUrl: 'https://github.com/seu-usuario/projeto-ecommerce',
+    imageUrl: '/images/loja-ifantil.png',
+    tags: ['React', 'Next.js', 'Tailwind CSS', 'Context API', 'AWS', 'photoshop'],
+    liveUrl: 'https://loja-infantil-phi.vercel.app/',
   },
   {
     id: 3,
-    title: 'Blog com WordPress',
+    title: 'Oficina de Ar-Veicular',
     description:
       'Blog institucional desenvolvido em WordPress com o construtor de páginas Elementor, focado em SEO e design responsivo.',
-    imageUrl: 'https://placehold.co/600x400',
-    tags: ['WordPress', 'Elementor', 'Photoshop'],
-    liveUrl: '#',
+    imageUrl: '/images/ar-veicular.png',
+    tags: ['Next.js', 'React', 'Tailwind CSS', 'photoshop'],
+    liveUrl: 'https://projeto-oficina-pi.vercel.app/',
   },
   {
     id: 4,
     title: 'API de Tarefas (AWS)',
     description:
       'Uma API RESTful para um app de lista de tarefas, deployada na AWS usando Lambda e API Gateway.',
-    imageUrl: 'https://placehold.co/600x400',
-    tags: ['AWS', 'TypeScript', 'Node.js'],
-    repoUrl: 'https://github.com/seu-usuario/api-tarefas-aws',
+    imageUrl: '/images/construcao.png',
+    tags: ['HTML', 'CSS', 'Javascript', 'Node.js'],
+    repoUrl: 'https://responsive-construction-website-chi.vercel.app/',
   },
 ];
 

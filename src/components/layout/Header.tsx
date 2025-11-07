@@ -1,17 +1,18 @@
-'use client'; // Necessário para o estado do menu mobile (useState)
+"use client"; // Necessário para o estado do menu mobile (useState)
 
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React, { useState } from "react";
+import Link from "next/link";
 // Importando ícones (lembre-se de instalar: npm install react-icons)
-import { HiOutlineMenuAlt3, HiOutlineX } from 'react-icons/hi';
+import { HiOutlineX } from "react-icons/hi";
+import { IoMdMenu } from "react-icons/io";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Sobre', href: '#about' },
-    { name: 'Projetos', href: '#projects' },
-    { name: 'Contato', href: '#contact' },
+    { name: "Sobre", href: "#about" },
+    { name: "Projetos", href: "#projects" },
+    { name: "Contato", href: "#contact" },
     // { name: 'Blog', href: '/blog' }, // Exemplo se tivesse uma página de blog
   ];
 
@@ -49,15 +50,15 @@ const Header: React.FC = () => {
             aria-label="Abrir menu"
             className="text-3xl text-gray-300 transition-colors hover:text-red-500"
           >
-            <HiOutlineMenuAlt3 />
+            <IoMdMenu />
           </button>
         </div>
       </nav>
 
       {/* Overlay do Menu Mobile */}
       <div
-        className={`fixed inset-0 z-50 transform bg-gray-900 transition-transform duration-300 ease-in-out md:hidden ${
-          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`h-50 fixed inset-0 z-50 transform bg-gray-900 transition-transform duration-300 ease-in-out mt-5 roundend-lg md:hidden p-5 ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         {/* Botão de Fechar */}
@@ -72,13 +73,13 @@ const Header: React.FC = () => {
         </div>
 
         {/* Links do Menu Mobile */}
-        <div className="flex h-full flex-col items-center justify-center space-y-10">
+        <div className="flex h-10 flex-col items-center justify-center space-y-6">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
               onClick={handleLinkClick} // Fecha o menu ao clicar
-              className="text-3xl font-semibold text-white transition-colors hover:text-red-500"
+              className="text-2xl font-semibold text-white transition-colors hover:text-red-500"
             >
               {link.name}
             </Link>

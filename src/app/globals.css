@@ -17,7 +17,9 @@
   --animate-fade-in-up: fade-in-up 0.6s ease-out forwards;
 }
 body {
-  background-color: var(--color-store-primary);
+  background-color: var(--color-will-bg-dark);
+  color: white;
+
 }
 
 /* Chrome, Edge and Safari */

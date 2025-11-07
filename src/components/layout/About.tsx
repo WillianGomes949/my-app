@@ -11,19 +11,19 @@ export default function About(){
     "React",
     "Next.js",
     "Tailwind CSS",
-    "AWS (básico)",
+    "AWS",
     "WordPress",
     "Photoshop",
   ];
 
   return (
-    <section id="about" className="py-10 md:py-24 bg-gray-900 text-will-light">
+    <section id="about" className="py-10 md:py-24 ">
       <div className="container mx-auto max-w-6xl px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           {/* Coluna da Imagem */}
           <div className="p-0 m-0">
             <Image
-              src={"/images/williangomes.png"}
+              src={"/images/willian-gomes.png"}
               alt="Willian Gomes"
               width={600}
               height={600}
@@ -39,7 +39,7 @@ export default function About(){
             <p className="text-lg text-will-light mb-4 leading-relaxed">
               Olá! Sou Willian, um desenvolvedor fullstack iniciante apaixonado
               por tecnologia e por transformar ideias em soluções digitais
-              funcionais e elegantes.
+              funcionais e que convertem.
             </p>
             <p className="text-lg text-will-light mb-6 leading-relaxed">
               Minha jornada começou com HTML e CSS, e rapidamente evoluiu para o

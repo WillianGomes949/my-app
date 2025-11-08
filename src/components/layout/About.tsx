@@ -38,16 +38,16 @@ export default function About(){
               Sobre Mim
             </h2>
             <p className="text-lg text-will-light mb-4 leading-relaxed">
-              Olá! Sou Willian, um desenvolvedor fullstack iniciante apaixonado
+              Olá! Sou Willian, um desenvolvedor fullstack iniciante um apaixonado
               por tecnologia e por transformar ideias em soluções digitais
-              funcionais e que convertem.
+              funcionais.
             </p>
             <p className="text-lg text-will-light mb-6 leading-relaxed">
-              Minha jornada começou com HTML e CSS, e rapidamente evoluiu para o
+              Minha jornada começou com HTML e CSS, e rapidamente evolui para o
               ecossistema JavaScript moderno. Hoje, meu foco é construir
               aplicações web robustas e escaláveis com React, Next.js e
               TypeScript, utilizando AWS para infraestrutura e Tailwind CSS para
-              interfaces ágeis.
+              interfaces ágeis. Sempra estudando e aprendendo.
             </p>
             <h3 className="text-2xl font-semibold text-white mb-4">
               Minhas Stacks:

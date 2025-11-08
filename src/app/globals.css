@@ -7,8 +7,8 @@ body {
 
 @theme {
   /* Cores personalizadas */
-  --color-will-primary: #fb2c36;
-  --color-will-p-light: #f20519;
+  --color-will-primary: #f20519;
+  --color-will-p-light: #fb2c36;
   --color-will-secondary: #e6a52e;
   --color-will-accent: #7ccf00;
   --color-will-light: #d1d5dc;

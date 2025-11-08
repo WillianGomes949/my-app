@@ -16,7 +16,7 @@ const mockProjects: Project[] = [
     title: "E-commerce (Conceito)",
     description:
       "Um conceito de e-commerce com carrinho de compras, utilizando React e Context API para gerenciamento de estado.",
-    imageUrl: "/images/loja-ifantil.png",
+    imageUrl: "/images/loja-ifantil.webp",
     tags: ["Next.js","Tailwind CSS","Context API","AWS","PWA","Vercel",],
     liveUrl: "https://loja-infantil-phi.vercel.app/",
     repoUrl: "",
@@ -26,7 +26,7 @@ const mockProjects: Project[] = [
     title: "Oficina de Ar-Veicular",
     description:
       "Um site para uma oficina de ar-automotivo, criada com react.js e next.js.",
-    imageUrl: "/images/ar-veicular.png",
+    imageUrl: "/images/ar-veicular.webp",
     tags: ["Next.js", "React", "Tailwind", "Photoshop", "Vercel"],
     liveUrl: "https://projeto-oficina-pi.vercel.app/",
     repoUrl: "https://github.com/WillianGomes949/projeto-Oficina",
@@ -36,7 +36,7 @@ const mockProjects: Project[] = [
     title: "Emp. de Construção",
     description:
       "Site para Empresa de Construção, Totalmente responsivo e leve.",
-    imageUrl: "/images/construcao.png",
+    imageUrl: "/images/construcao.webp",
     tags: ["HTML", "CSS", "Javascript", "Node.js", "Vercel"],
     liveUrl: "https://responsive-construction-website-chi.vercel.app/",
     repoUrl: "https://github.com/WillianGomes949/responsive_construction_website",
@@ -46,7 +46,7 @@ const mockProjects: Project[] = [
     title: "Consultar CEP",
     description:
       "Um mini App para consulta gratuita de CEPs com direcionamento para google Maps",
-    imageUrl: "/images/consulta-cep.png",
+    imageUrl: "/images/consulta-cep.webp",
     tags: ["API Rest", "Javascript", "CSS", "Vercel"],
     liveUrl: "https://bucador-de-ceps.vercel.app/",
     repoUrl: "https://github.com/WillianGomes949/Buscador-de-Ceps",
@@ -56,7 +56,7 @@ const mockProjects: Project[] = [
     title: "Ônibus de Fortaleza",
     description:
       "Um mini App utilizando react.js e next.js para consulta gratuita dos Horários de Ônibus de Fortaleza, atualizados.",
-    imageUrl: "/images/onibusfortaleza.png",
+    imageUrl: "/images/onibusfortaleza.webp",
     tags: ["API Rest", "Next.js", "Tailwind", "PWA", "Vercel"],
     liveUrl: "https://horarios-onibus-fortaleza.vercel.app/",
     repoUrl: "https://github.com/WillianGomes949/horarios-onibus-fortaleza",
@@ -66,7 +66,7 @@ const mockProjects: Project[] = [
     title: "Gerenciador de validades",
     description:
       "Um mini App para gerenciamento de produtos, com back-end usando o google sheets, feito com next.js e tailwind.",
-    imageUrl: "/images/gerenciador-validades.png",
+    imageUrl: "/images/gerenciador-validades.webp",
     tags: [
       "API Rest",
       "Next.js",
@@ -83,7 +83,7 @@ const mockProjects: Project[] = [
     title: "Agregador de Notícias",
     description:
       "Um agregador de noticias espaciais, feito com next.js e tailwind.",
-    imageUrl: "/images/space-news.png",
+    imageUrl: "/images/space-news.webp",
     tags: ["API Rest", "Next.js", "Tailwind CSS", "Vercel"],
     liveUrl: "https://space-news-ada.vercel.app/",
     repoUrl: "https://github.com/WillianGomes949/space-news-ada",
@@ -93,7 +93,7 @@ const mockProjects: Project[] = [
     title: "Consulta Tabela FIPE",
     description:
       "Um agregador de noticias espaciais, feito com next.js e tailwind.",
-    imageUrl: "/images/fipe.png",
+    imageUrl: "/images/fipe.webp",
     tags: ["API Rest", "Next.js", "Tailwind CSS", "Vercel"],
     liveUrl: "https://consulta-tabela-fipe-two.vercel.app//",
     repoUrl: "https://github.com/WillianGomes949/consulta-tabela-fipe",

@@ -1,58 +1,127 @@
 import Link from 'next/link';
 import React from 'react';
+import { RiLoader2Fill } from 'react-icons/ri';
+import LoadingSpinner from './LoadingSpinner';
 
-// Definindo as propriedades do botão
-interface MyButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface BaseProps {
   children: React.ReactNode;
   /**
-   * Define o estilo visual do botão
    * @default 'primary'
    */
-  variant?: 'primary' | 'secondary';
-  /**
-   * Classes adicionais do Tailwind para customização
-   */
+  variant?: 'primary' | 'secondary' | 'ghost';
+  size?: 'sm' | 'md' | 'lg';
   className?: string;
-  href?: string;
+  disabled?: boolean;
+  loading?: boolean;
 }
 
-/**
- * Um componente de botão reutilizável com estilos pré-definidos.
- * Aceita todas as props de um <button> HTML padrão.
- */
-export default function  MyButton({
-  children,
-  variant = 'primary',
-  className = '',
-  href='',
-  ...rest
-}: MyButtonProps){
-  // Estilos base, aplicados a todas as variantes
-  const baseStyle =
-    'py-3 px-6 rounded-lg font-bold transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-102 w-70';
+type ButtonAsButton = BaseProps &
+  Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'className'> & {
+    href?: never;
+  };
 
-  // Estilos específicos da variante
-  // Usei 'red' para combinar com a inspiração que você mandou
-  const variantStyles =
-    variant === 'primary'
-      ? 'bg-will-primary text-white hover:bg-will-p-light focus:ring-will-primary'
-      : 'border-2 border-will-primary text-will-primary hover:bg-will-primary hover:text-white focus:ring-will-primary';
+type ButtonAsLink = BaseProps &
+  Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'className'> & {
+    href: string;
+  };
 
-  // Combina todas as classes
-  const combinedClassName = `${baseStyle} ${variantStyles} ${className}`;
+type MyButtonProps = ButtonAsButton | ButtonAsLink;
 
+export default function MyButton(props: MyButtonProps) {
+  const {
+    variant = 'primary',
+    size = 'md',
+    className = '',
+    disabled = false,
+    loading = false,
+    children,
+    ...rest
+  } = props;
 
-  const buttonContent = typeof children === 'string'
-    ? children.toUpperCase() // Se for, converte
-    : children;             // Se não for (um ícone, etc), usa como está
+  // Base styles
+  const baseStyle = `
+      rounded-lg font-bold transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-102 w-70 text-center
+  `;
+
+  // Size variants
+  const sizeStyles = {
+    sm: 'py-2 px-4 text-sm',
+    md: 'py-3 px-6 text-base',
+    lg: 'py-4 px-8 text-lg'
+  };
+
+  // Color variants
+  const variantStyles = {
+    primary: `
+      bg-will-primary text-white focus:ring-will-primary
+      focus:ring-offset-will-primary
+      shadow-lg hover:shadow-will-primary/25
+    `,
+    secondary: `
+      border-2 border-will-primary text-will-primary hover:bg-will-primary hover:text-white focus:ring-will-primary
+      focus:ring-offset-will-primary
+      shadow-lg hover:shadow-will-primary/25
+      hover:border-will-primary
+    `,
+    ghost: `
+      text-lime-500 hover:bg-lime-500/10
+      focus:ring-lime-500 focus:ring-offset-gray-900
+      hover:border-lime-500/30 border-2 border-transparent
+    `
+  };
+
+  const combinedClassName = `
+    ${baseStyle}
+    ${sizeStyles[size]}
+    ${variantStyles[variant]}
+    ${loading ? 'cursor-wait' : ''}
+    ${className}
+  `.replace(/\s+/g, ' ').trim();
+
+  // Process children - only uppercase strings, preserve other elements
+  const buttonContent = React.Children.map(children, child => 
+    typeof child === 'string' ? child.toUpperCase() : child
+  );
+
+  // Common props for both button and link
+  const commonProps = {
+    className: combinedClassName,
+    'data-variant': variant,
+    'data-size': size,
+    'data-loading': loading,
+    ...(disabled && { 'aria-disabled': true })
+  };
+
+  if ('href' in rest && rest.href) {
+    const { href, ...linkRest } = rest;
+    
+    return (
+      <Link 
+        href={href}
+        {...commonProps}
+        {...linkRest as React.AnchorHTMLAttributes<HTMLAnchorElement>}
+      >
+        {loading && <LoadingSpinner />}
+        <span className={loading ? 'invisible' : 'visible'}>
+          {buttonContent}
+        </span>
+      </Link>
+    );
+  }
+
+  const { type = 'button', ...buttonRest } = rest as React.ButtonHTMLAttributes<HTMLButtonElement>;
 
   return (
-    <Link  href={href}>
-      <button className={combinedClassName} {...rest}>
+    <button
+      type={type}
+      disabled={disabled || loading}
+      {...commonProps}
+      {...buttonRest}
+    >
+      {loading && <LoadingSpinner />}
+      <span className={loading ? 'invisible' : 'visible'}>
         {buttonContent}
-      </button>
-    </Link>
-
+      </span>
+    </button>
   );
-};
+}

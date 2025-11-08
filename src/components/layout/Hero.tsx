@@ -19,6 +19,7 @@ export default function Hero() {
         CSS, AWS, WordPress e Photoshop.
       </p>
       <div className="flex flex-col gap-4 w-full md:flex-row items-center justify-center mb-8">
+       
         <MyButton variant="primary" href="#projects">
           Ver Projetos
         </MyButton>

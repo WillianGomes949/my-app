@@ -23,11 +23,12 @@ export default function About(){
           {/* Coluna da Imagem */}
           <div className="p-0 m-0">
             <Image
-              src={"/images/willian-gomes.png"}
+              src={"/images/willian-gomes.webp"}
               alt="Willian Gomes"
               width={600}
               height={600}
-              className="rounded-lg object-cover w-full h-150"
+              loading="eager"
+              className="rounded-lg object-cover"
             />
           </div>
 

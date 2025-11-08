@@ -103,6 +103,7 @@ export default function Projects() {
                     className="w-full h-48 object-cover"
                     width={600}
                     height={400}
+                    loading="lazy"
                     unoptimized
                   />
                 </Link>

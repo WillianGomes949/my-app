@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Willian Gomes - Desenvolvedor FullStack",
   description: "Desenvolvendo soluções web inovadoras e de alta qualidade.",
+   manifest: "/manifest.json",
 };
 
 export default function RootLayout({

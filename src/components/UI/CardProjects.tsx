@@ -4,7 +4,7 @@
 import mockProjects, { techColors, techStacks } from "@/lib/db";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useMemo } from "react";
+import { useState} from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
@@ -16,13 +16,13 @@ export default function CardProjects() {
   const [visibleCount, setVisibleCount] = useState(PROJECTS_PER_PAGE);
 
   // Memoize para performance: só recalcula se os projetos mudarem
-  const allTags = useMemo(() => {
-    const tagsSet = new Set<string>();
-    mockProjects.forEach((project) => {
-      project.tags.forEach((tag) => tagsSet.add(tag));
-    });
-    return ["Todos", ...Array.from(tagsSet).sort()];
-  }, []); // Dependência vazia se mockProjects for estático
+//   const allTags = useMemo(() => {
+//     const tagsSet = new Set<string>();
+//     mockProjects.forEach((project) => {
+//       project.tags.forEach((tag) => tagsSet.add(tag));
+//     });
+//     return ["Todos", ...Array.from(tagsSet).sort()];
+//   }, []); // Dependência vazia se mockProjects for estático
 
   const filteredProjects =
     activeFilter === "Todos"

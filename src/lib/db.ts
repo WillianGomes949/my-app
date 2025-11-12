@@ -18,7 +18,15 @@ const mockProjects: Project[] = [
     description:
       "Um conceito de e-commerce com carrinho de compras, utilizando React e Context API para gerenciamento de estado.",
     imageUrl: "/images/loja-ifantil.webp",
-    tags: ["Next.js","Tailwind CSS","Context API","AWS","PWA","Vercel", "React"],
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "Context API",
+      "AWS",
+      "PWA",
+      "Vercel",
+      "React",
+    ],
     liveUrl: "https://loja-infantil-phi.vercel.app/",
     repoUrl: "",
   },
@@ -40,17 +48,17 @@ const mockProjects: Project[] = [
     imageUrl: "/images/construcao.webp",
     tags: ["HTML", "CSS", "JavaScript", "Node.js", "Vercel"],
     liveUrl: "https://responsive-construction-website-chi.vercel.app/",
-    repoUrl: "https://github.com/WillianGomes949/responsive_construction_website",
+    repoUrl:
+      "https://github.com/WillianGomes949/responsive_construction_website",
   },
   {
     id: 4,
-    title: "Consultar CEP",
-    description:
-      "Um mini App para consulta gratuita de CEPs com direcionamento para google Maps",
-    imageUrl: "/images/consulta-cep.webp",
-    tags: ["API Rest", "JavaScript", "CSS", "Vercel", "React"],
-    liveUrl: "https://bucador-de-ceps.vercel.app/",
-    repoUrl: "https://github.com/WillianGomes949/Buscador-de-Ceps",
+    title: "Assistncia",
+    description: "Um Site ^para uma ssistÊncia de computadores",
+    imageUrl: "/images/gugatech.webp",
+    tags: ["Next.js", "Tailwind CSS", "React", "Vercel"],
+    liveUrl: "https://gugatech-fortaleza.vercel.app/",
+    repoUrl: "",
   },
   {
     id: 5,
@@ -75,7 +83,7 @@ const mockProjects: Project[] = [
       "PWA",
       "Google Scripts",
       "Vercel",
-       "React"
+      "React",
     ],
     liveUrl: "https://horarios-onibus-fortaleza.vercel.app/",
     repoUrl: "https://github.com/WillianGomes949/horarios-onibus-fortaleza",
@@ -90,7 +98,7 @@ const mockProjects: Project[] = [
     liveUrl: "https://space-news-ada.vercel.app/",
     repoUrl: "https://github.com/WillianGomes949/space-news-ada",
   },
-   {
+  {
     id: 8,
     title: "Consulta Tabela FIPE",
     description:
@@ -100,11 +108,10 @@ const mockProjects: Project[] = [
     liveUrl: "https://consulta-tabela-fipe-two.vercel.app//",
     repoUrl: "https://github.com/WillianGomes949/consulta-tabela-fipe",
   },
-   {
+  {
     id: 9,
     title: "Clinica Medica",
-    description:
-      "Um Site de Clinica Medica",
+    description: "Um Site de Clinica Medica",
     imageUrl: "/images/clinica-medica.png",
     tags: ["WordPress", "elementor", "PHP"],
     liveUrl: "https://portfolio-wordpress.infinityfreeapp.com/clinica-medica/",
@@ -112,13 +119,13 @@ const mockProjects: Project[] = [
   },
   {
     id: 10,
-    title: "Assistncia",
+    title: "Consultar CEP",
     description:
-      "Um Site ^para uma ssistÊncia de computadores",
-    imageUrl: "/images/gugatech.webp",
-    tags: ["Next.js", "Tailwind CSS", "React", "Vercel"],
-    liveUrl: "https://gugatech-fortaleza.vercel.app/",
-    repoUrl: "",
+      "Um mini App para consulta gratuita de CEPs com direcionamento para google Maps",
+    imageUrl: "/images/consulta-cep.webp",
+    tags: ["API Rest", "JavaScript", "CSS", "Vercel", "React"],
+    liveUrl: "https://bucador-de-ceps.vercel.app/",
+    repoUrl: "https://github.com/WillianGomes949/Buscador-de-Ceps",
   },
 ];
 

@@ -25,7 +25,7 @@ import {
 
 // Define as abas de filtro fixas
 const techTags = ["Todos", "WordPress", "JavaScript", "React", "Next.js"];
-const allTags = ["Todos", ...new Set(mockProjects.flatMap((p) => p.tags))];
+// const allTags = ["Todos", ...new Set(mockProjects.flatMap((p) => p.tags))];
 
 // Define quantos projetos serão exibidos por página
 const PROJECTS_PER_PAGE = 6;

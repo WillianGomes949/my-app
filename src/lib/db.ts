@@ -24,8 +24,19 @@ interface Project {
 }
 
 const mockProjects: Project[] = [
+  
   {
-    id: 1,
+    id: 10,
+    title: "GugaTech - Assistência Técnica em Computadores",
+    description:
+      "Site profissional para assistência técnica especializada em manutenção de computadores e notebooks. Inclui agendamento de serviços e catálogo de soluções técnicas.",
+    imageUrl: "/images/gugatech.webp",
+    tags: ["Next.js", "Tailwind CSS", "React", "Vercel"],
+    liveUrl: "https://gugatech-fortaleza.vercel.app/",
+    // repoUrl: "",
+  },
+  {
+    id: 9,
     title: "Loja Infantil - E-commerce Responsivo",
     description:
       "Plataforma de e-commerce completa para produtos infantis com carrinho de compras, suporte integração de pagamentos e design responsivo. Desenvolvido com React e Context API para gerenciamento de estado eficiente.",
@@ -43,7 +54,7 @@ const mockProjects: Project[] = [
     // repoUrl: "",
   },
   {
-    id: 2,
+    id: 8,
     title: "Ar Veicular - Especialista em Ar Automotivo",
     description:
       "Site institucional para oficina especializada em ar condicionado automotivo. Apresenta serviços e informações de contato com design moderno e otimizado para conversão.",
@@ -53,7 +64,7 @@ const mockProjects: Project[] = [
     // repoUrl: "https://github.com/WillianGomes949/projeto-Oficina",
   },
   {
-    id: 3,
+    id: 7,
     title: "Construtora Excelência - Site Institucional",
     description:
       "Website corporativo para empresa de construção civil com projetos, serviços e formulário. Totalmente responsivo e otimizado para performance.",
@@ -64,13 +75,13 @@ const mockProjects: Project[] = [
     //   "https://github.com/WillianGomes949/responsive_construction_website",
   },
   {
-    id: 4,
-    title: "GugaTech - Assistência Técnica em Computadores",
+    id: 6,
+    title: "Clínica Saúde Total - Website Médico",
     description:
-      "Site profissional para assistência técnica especializada em manutenção de computadores e notebooks. Inclui agendamento de serviços e catálogo de soluções técnicas.",
-    imageUrl: "/images/gugatech.webp",
-    tags: ["Next.js", "Tailwind CSS", "React", "Vercel"],
-    liveUrl: "https://gugatech-fortaleza.vercel.app/",
+      "Site institucional para clínica médica com informações sobre especialidades.",
+    imageUrl: "/images/clinica-medica.png",
+    tags: ["WordPress", "elementor", "PHP"],
+    liveUrl: "https://portfolio-wordpress.infinityfreeapp.com/clinica-medica/",
     // repoUrl: "",
   },
   {
@@ -84,7 +95,7 @@ const mockProjects: Project[] = [
     // repoUrl: "https://github.com/WillianGomes949/horarios-onibus-fortaleza",
   },
   {
-    id: 6,
+    id: 4,
     title: "Validade Fácil - Gerenciador de Produtos",
     description:
       "Sistema de controle de validade de produtos integrado com Google Sheets. Permite cadastro, consulta e alertas de produtos próximos do vencimento.",
@@ -102,7 +113,7 @@ const mockProjects: Project[] = [
     // repoUrl: "https://github.com/WillianGomes949/horarios-onibus-fortaleza",
   },
   {
-    id: 7,
+    id: 3,
     title: "SpaceNews - Agregador de Notícias Espaciais",
     description:
       "Plataforma que agrega as últimas notícias e descobertas sobre astronomia e exploração espacial.",
@@ -112,7 +123,7 @@ const mockProjects: Project[] = [
     // repoUrl: "https://github.com/WillianGomes949/space-news-ada",
   },
   {
-    id: 8,
+    id: 2,
     title: "FIPE Fácil - Consulta de Tabela FIPE",
     description:
       "Ferramenta para consulta rápida e intuitiva de valores FIPE de veículos. Busca otimizada.",
@@ -122,17 +133,7 @@ const mockProjects: Project[] = [
     // repoUrl: "https://github.com/WillianGomes949/consulta-tabela-fipe",
   },
   {
-    id: 9,
-    title: "Clínica Saúde Total - Website Médico",
-    description:
-      "Site institucional para clínica médica com informações sobre especialidades.",
-    imageUrl: "/images/clinica-medica.png",
-    tags: ["WordPress", "elementor", "PHP"],
-    liveUrl: "https://portfolio-wordpress.infinityfreeapp.com/clinica-medica/",
-    // repoUrl: "",
-  },
-  {
-    id: 10,
+    id: 1,
     title: "CEP Rápido - Buscador de Códigos Postais",
     description:
       "Ferramenta para consulta de CEPs brasileiros com integração ao Google Maps. Mostra endereços completos e permite navegação até a localização a partir do CEP.",

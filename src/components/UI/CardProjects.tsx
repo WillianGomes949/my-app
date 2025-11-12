@@ -111,7 +111,8 @@ export default function CardProjects() {
               }}
             >
               {/* Imagem do Projeto */}
-              <div className="relative overflow-hidden h-48">
+              <Link href={`${project.liveUrl}`} target="_blank">
+                <div className="relative overflow-hidden h-48">
                 <Image
                   src={project.imageUrl}
                   alt={project.title}
@@ -120,7 +121,8 @@ export default function CardProjects() {
                   height={400}
                   loading="lazy"
                 />
-              </div>
+                </div>
+              </Link>
 
               {/* Conteúdo do Projeto */}
               <div className="p-6 flex flex-col flex-1">

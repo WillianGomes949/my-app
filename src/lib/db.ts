@@ -110,6 +110,16 @@ const mockProjects: Project[] = [
     liveUrl: "https://portfolio-wordpress.infinityfreeapp.com/clinica-medica/",
     repoUrl: "",
   },
+  {
+    id: 10,
+    title: "Assistncia",
+    description:
+      "Um Site ^para uma ssistÊncia de computadores",
+    imageUrl: "/images/gugatech.webp",
+    tags: ["Next.js", "Tailwind CSS", "React", "Vercel"],
+    liveUrl: "https://gugatech-fortaleza.vercel.app/",
+    repoUrl: "",
+  },
 ];
 
 export default mockProjects;

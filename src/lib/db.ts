@@ -27,7 +27,7 @@ const mockProjects: Project[] = [
     id: 1,
     title: "Loja Infantil - E-commerce Responsivo",
     description:
-      "Plataforma de e-commerce completa para produtos infantis com carrinho de compras, integração de pagamentos e design responsivo. Desenvolvido com React e Context API para gerenciamento de estado eficiente.",
+      "Plataforma de e-commerce completa para produtos infantis com carrinho de compras, suporte integração de pagamentos e design responsivo. Desenvolvido com React e Context API para gerenciamento de estado eficiente.",
     imageUrl: "/images/loja-ifantil.webp",
     tags: [
       "Next.js",
@@ -45,7 +45,7 @@ const mockProjects: Project[] = [
     id: 2,
     title: "Ar Veicular - Especialista em Ar Automotivo",
     description:
-      "Site institucional para oficina especializada em ar condicionado automotivo. Apresenta serviços, portfólio e informações de contato com design moderno e otimizado para conversão.",
+      "Site institucional para oficina especializada em ar condicionado automotivo. Apresenta serviços e informações de contato com design moderno e otimizado para conversão.",
     imageUrl: "/images/ar-veicular.webp",
     tags: ["Next.js", "Tailwind", "Photoshop", "Vercel", "React"],
     liveUrl: "https://projeto-oficina-pi.vercel.app/",
@@ -55,7 +55,7 @@ const mockProjects: Project[] = [
     id: 3,
     title: "Construtora Excelência - Site Institucional",
     description:
-      "Website corporativo para empresa de construção civil com catálogo de projetos, serviços e formulário de orçamento. Totalmente responsivo e otimizado para performance.",
+      "Website corporativo para empresa de construção civil com projetos, serviços e formulário. Totalmente responsivo e otimizado para performance.",
     imageUrl: "/images/construcao.webp",
     tags: ["HTML", "CSS", "JavaScript", "Node.js", "Vercel"],
     liveUrl: "https://responsive-construction-website-chi.vercel.app/",
@@ -76,7 +76,7 @@ const mockProjects: Project[] = [
     id: 5,
     title: "Ônibus Fortaleza - Consulta de Horários",
     description:
-      "Aplicativo PWA para consulta em tempo real dos horários de ônibus de Fortaleza. Interface intuitiva com atualizações automáticas e funcionamento offline.",
+      "Aplicativo PWA para consulta em tempo real dos horários de ônibus de Fortaleza. Interface intuitiva com atualizações automáticas.",
     imageUrl: "/images/onibusfortaleza.webp",
     tags: ["API Rest", "Next.js", "Tailwind", "PWA", "Vercel", "React"],
     liveUrl: "https://horarios-onibus-fortaleza.vercel.app/",
@@ -104,7 +104,7 @@ const mockProjects: Project[] = [
     id: 7,
     title: "SpaceNews - Agregador de Notícias Espaciais",
     description:
-      "Plataforma que agrega as últimas notícias e descobertas sobre astronomia e exploração espacial. Interface moderna com filtros por categoria e fonte.",
+      "Plataforma que agrega as últimas notícias e descobertas sobre astronomia e exploração espacial.",
     imageUrl: "/images/space-news.webp",
     tags: ["API Rest", "Next.js", "Tailwind CSS", "Vercel", "React"],
     liveUrl: "https://space-news-ada.vercel.app/",
@@ -114,7 +114,7 @@ const mockProjects: Project[] = [
     id: 8,
     title: "FIPE Fácil - Consulta de Tabela FIPE",
     description:
-      "Ferramenta para consulta rápida e intuitiva de valores FIPE de veículos. Busca otimizada com histórico de consultas e comparação de preços.",
+      "Ferramenta para consulta rápida e intuitiva de valores FIPE de veículos. Busca otimizada.",
     imageUrl: "/images/fipe.webp",
     tags: ["API Rest", "Next.js", "Tailwind CSS", "Vercel", "React"],
     liveUrl: "https://consulta-tabela-fipe-two.vercel.app//",
@@ -124,7 +124,7 @@ const mockProjects: Project[] = [
     id: 9,
     title: "Clínica Saúde Total - Website Médico",
     description:
-      "Site institucional para clínica médica com informações sobre especialidades, corpo clínico, agendamento online e artigos sobre saúde e bem-estar.",
+      "Site institucional para clínica médica com informações sobre especialidades.",
     imageUrl: "/images/clinica-medica.png",
     tags: ["WordPress", "elementor", "PHP"],
     liveUrl: "https://portfolio-wordpress.infinityfreeapp.com/clinica-medica/",
@@ -134,7 +134,7 @@ const mockProjects: Project[] = [
     id: 10,
     title: "CEP Rápido - Buscador de Códigos Postais",
     description:
-      "Ferramenta para consulta de CEPs brasileiros com integração ao Google Maps. Mostra endereços completos e permite navegação até a localização.",
+      "Ferramenta para consulta de CEPs brasileiros com integração ao Google Maps. Mostra endereços completos e permite navegação até a localização a partir do CEP.",
     imageUrl: "/images/consulta-cep.webp",
     tags: ["API Rest", "JavaScript", "CSS", "Vercel", "React"],
     liveUrl: "https://bucador-de-ceps.vercel.app/",
@@ -169,6 +169,4 @@ const techStacks = [
   { name: "Photoshop", icon: SiAdobephotoshop },
 ];
 
-export { techColors, techStacks };
-
-export default mockProjects;
+export { techColors, techStacks, mockProjects };

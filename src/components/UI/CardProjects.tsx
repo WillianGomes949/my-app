@@ -1,12 +1,13 @@
 // /components/CardProjects.tsx
 "use client";
 
-import mockProjects, { techColors, techStacks } from "@/lib/db";
+import { mockProjects, techColors, techStacks } from "@/lib/db";
 import Image from "next/image";
 import Link from "next/link";
 import { useState} from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import MyButton from "./MyButton";
 
 const techTags = ["Todos", "WordPress", "JavaScript", "React", "Next.js"];
 const PROJECTS_PER_PAGE = 6;
@@ -216,19 +217,13 @@ export default function CardProjects() {
       {/* Botão de Carregar Mais */}
       {visibleProjects.length < filteredProjects.length && (
         <div className="text-center">
-          <button
+          <MyButton
             onClick={loadMore}
-            className="
-              group flex items-center justify-center gap-3 mx-auto
-              px-8 py-3 bg-gray-900 border border-neutral-700 
-              text-neutral-200 rounded-2xl font-semibold 
-              transition-all duration-300
-              hover:bg-neutral-700/70 hover:border-neutral-600
-            "
+            variant="secondary"
           >
             Carregar Mais
             <HiOutlineArrowNarrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-          </button>
+          </MyButton>
         </div>
       )}
       {/* Estado Vazio */}

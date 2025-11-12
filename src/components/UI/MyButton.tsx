@@ -50,7 +50,7 @@ export default function MyButton(props: MyButtonProps) {
     focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-offset-gray-900
     disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none
     active:scale-95 border-2 backdrop-blur-sm
-    group relative overflow-hidden
+    group relative overflow-hidden w-full md:w-auto
   `;
 
   // Size variants

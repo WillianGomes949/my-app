@@ -55,9 +55,9 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
+      className={`fixed top-0 z-50 w-full transition-all duration-100 ${
         isScrolled
-          ? "bg-white/90 backdrop-blur-lg shadow-sm py-2"
+          ? "bg-gray-900/20 backdrop-blur-lg shadow-sm py-2 border-b-gray-700 border-b-2"
           : "bg-transparent py-4"
       }`}
     >
@@ -66,7 +66,7 @@ export default function Header() {
         <Link
           href="/"
           className={`text-xl font-bold transition-colors ${
-            isScrolled ? "text-gray-900" : "text-white"
+            isScrolled ? "text-gray-100" : "text-white"
           }`}
         >
           Willian
@@ -82,8 +82,8 @@ export default function Header() {
               className={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-all ${
                 isScrolled
                   ? link.name === "WhatsApp"
-                    ? "text-gray-700 hover:bg-lime-50 hover:text-lime-600"
-                    : "text-gray-700 hover:bg-red-50 hover:text-red-600"
+                    ? "text-gray-100 hover:bg-lime-50 hover:text-lime-600"
+                    : "text-gray-100 hover:bg-red-50 hover:text-red-600"
                   : link.name === "WhatsApp"
                   ? "text-white/90 hover:bg-lime-500/20 hover:text-lime-300"
                   : "text-white/90 hover:bg-red-500/20 hover:text-red-300"

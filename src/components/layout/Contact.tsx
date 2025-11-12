@@ -90,7 +90,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-12 md:py-24 bg-gray-900 text-white">
+    <section id="contact" className="py-12 md:py-24 bg-gray-900 text-gray-100">
       <div className="container mx-auto max-w-6xl px-4">
         <div className="text-center mb-16">
           {/* Badge de Destaque */}
@@ -99,7 +99,7 @@ export default function Contact() {
               Contato
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-100 mb-4">
             Vamos Criar Algo <span className="text-will-primary">Incrível</span>{" "}
             Juntos
           </h2>
@@ -113,7 +113,7 @@ export default function Contact() {
           {/* Informações de Contato */}
           <div className="space-y-8 px-1">
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-6 flex items-center">
+              <h3 className="text-2xl font-semibold text-gray-100 mb-6 flex items-center">
                 <span className="w-6 h-0.5 bg-will-primary mr-3"></span>
                 Vamos Conversar
               </h3>
@@ -126,10 +126,10 @@ export default function Contact() {
             <div className="space-y-6">
               <div className="flex items-start gap-4 group cursor-pointer ">
                 <div className="bg-gray-800 p-3 rounded-xl hover:bg-will-primary/20 hover:scale-110 transition-all duration-300">
-                  <FaWhatsapp className="text-white text-xl" />
+                  <FaWhatsapp className="text-gray-100 text-xl" />
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-semibold text-white mb-1">
+                  <h4 className="text-lg font-semibold text-gray-100 mb-1">
                     WhatsApp
                   </h4>
                   <a
@@ -144,10 +144,10 @@ export default function Contact() {
 
               <div className="flex items-start gap-4 group cursor-pointer ">
                 <div className="bg-gray-800 p-3 rounded-xl hover:bg-will-primary/20 hover:scale-110 transition-all duration-300">
-                  <FaEnvelope className="text-white text-xl" />
+                  <FaEnvelope className="text-gray-100 text-xl" />
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-semibold text-white mb-1">
+                  <h4 className="text-lg font-semibold text-gray-100 mb-1">
                     Email
                   </h4>
                   <a
@@ -162,10 +162,10 @@ export default function Contact() {
 
               <div className="flex items-start gap-4 group cursor-pointer ">
                 <div className="bg-gray-800 p-3 rounded-xl hover:bg-will-primary/20 hover:scale-110 transition-all duration-300">
-                  <FaMapMarkerAlt className="text-white text-xl" />
+                  <FaMapMarkerAlt className="text-gray-100 text-xl" />
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-semibold text-white mb-1">
+                  <h4 className="text-lg font-semibold text-gray-100 mb-1">
                     Localização
                   </h4>
                   <p className="text-gray-300">Fortaleza, CE</p>
@@ -176,7 +176,7 @@ export default function Contact() {
 
             {/* Redes Sociais */}
             <div className="pt-6">
-              <h4 className="text-lg font-semibold text-white mb-4">
+              <h4 className="text-lg font-semibold text-gray-100 mb-4">
                 Redes Sociais
               </h4>
               <div className="flex space-x-4">
@@ -219,7 +219,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-will-primary focus:border-transparent transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-gray-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-will-primary focus:border-transparent transition-all duration-300"
                   placeholder="Seu nome completo"
                 />
               </div>
@@ -237,7 +237,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-will-primary focus:border-transparent transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-gray-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-will-primary focus:border-transparent transition-all duration-300"
                   placeholder="seu@email.com"
                 />
               </div>
@@ -253,11 +253,11 @@ export default function Contact() {
               <textarea
                 id="message"
                 name="message"
-                rows={6}
+                rows={10}
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-will-primary focus:border-transparent transition-all duration-300 resize-none"
+                className="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-gray-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-will-primary focus:border-transparent transition-all duration-300 resize-none"
                 placeholder="Conte-me sobre seu projeto, ideia ou oportunidade..."
               />
             </div>
@@ -271,7 +271,7 @@ export default function Contact() {
             >
               {isLoading ? (
                 <span className="flex items-center justify-center">
-                  <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
+                  <div className="w-5 h-5 border-2 border-gray-100 border-t-transparent rounded-full animate-spin mr-2"></div>
                   Enviando...
                 </span>
               ) : (

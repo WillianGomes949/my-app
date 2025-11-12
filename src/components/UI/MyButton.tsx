@@ -65,14 +65,14 @@ export default function MyButton(props: MyButtonProps) {
   const variantStyles = {
     primary: `
       bg-will-primary
-      text-white border-transparent
+      text-gray-100 border-transparent
       
       focus:ring-will-primary/50
       shadow-lg hover:shadow-2xl hover:shadow-will-primary/25
     `,
     secondary: `
       bg-gray-800/50 text-gray-100 border-gray-600
-      hover:bg-gray-700/80 hover:border-gray-500 hover:text-white
+      hover:bg-gray-700/80 hover:border-gray-500 hover:text-gray-100
       focus:ring-gray-500/50
       shadow-lg hover:shadow-2xl hover:shadow-gray-500/20
       hover:scale-105
@@ -85,7 +85,7 @@ export default function MyButton(props: MyButtonProps) {
     `,
     danger: `
       bg-gradient-to-r from-red-500 to-pink-500
-      text-white border-transparent
+      text-gray-100 border-transparent
       hover:from-red-600 hover:to-pink-600
       focus:ring-red-500/50
       shadow-lg hover:shadow-2xl hover:shadow-red-500/25
@@ -150,7 +150,7 @@ export default function MyButton(props: MyButtonProps) {
 
       {/* Ripple effect layer */}
       <div className="absolute inset-0 overflow-hidden rounded-2xl">
-        <div className="absolute inset-0 bg-linear-to-r from-white/0 via-white/10 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
+        <div className="absolute inset-0 bg-linear-to-r from-gray-100/0 via-gray-100/10 to-gray-100/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
       </div>
     </>
   );

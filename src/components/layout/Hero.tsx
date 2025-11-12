@@ -13,7 +13,7 @@ export default function Hero() {
       </div>
       <h1 className="text-5xl md:text-1xl lg:text-7xl  font-bold text-center mt-8 mb-8 bg-size-[200%_200%] animate-gradient-flow bg-linear-to-r from-will-primary via-will-p-light to-will-accent bg-clip-text text-transparent flex flex-col items-center justify-center md:flex-row gap-2">
         <div>
-          <p className="text-white">
+          <p className="text-gray-100">
             Willian<span className="text-will-p-light p-0 m-0">.{""}</span>
           </p>
         </div>

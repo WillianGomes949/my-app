@@ -1,29 +1,7 @@
-import React from "react";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { socialLinks } from "@/lib/db";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
-  const socialLinks = [
-    {
-      name: "WhatsApp",
-      href: "https://wa.me/5585988954195?text=Olá! Gostaria de conversar sobre um projeto...",
-      icon: FaWhatsapp,
-      color: "hover:text-lime-400",
-    },
-    {
-      name: "GitHub",
-      href: "https://github.com/williangomes949",
-      icon: FaGithub,
-      color: "hover:text-will-primary",
-    },
-    {
-      name: "LinkedIn",
-      href: "https://linkedin.com/in/williangomes949",
-      icon: FaLinkedin,
-      color: "hover:text-will-primary",
-    },
-  ];
 
   return (
     <footer className="bg-gray-950 text-gray-400 border-t border-gray-800">
@@ -32,7 +10,7 @@ export default function Footer() {
           {/* Copyright e Informações */}
           <div className="mb-6 text-center md:mb-0 md:text-left">
             <div className="flex items-center justify-center md:justify-start mb-2">
-              <span className="text-xl font-bold text-white mr-2">
+              <span className="text-xl font-bold text-gray-100 mr-2">
                 Willian<span className="text-will-primary">.</span>
               </span>
             </div>

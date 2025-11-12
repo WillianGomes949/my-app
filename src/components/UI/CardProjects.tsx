@@ -55,7 +55,7 @@ export default function CardProjects() {
               border 
               ${
                 activeFilter === tag
-                  ? "bg-will-primary text-white border-will-primary" // Botão Ativo
+                  ? "bg-will-primary text-gray-100 border-will-primary" // Botão Ativo
                   : "bg-neutral-800/60 border-neutral-700 text-neutral-300 hover:bg-neutral-700/70" // Botão Inativo
               }
             `}
@@ -80,8 +80,8 @@ export default function CardProjects() {
                   border-2 backdrop-blur-sm
                   ${
                     isActive
-                      ? "bg-will-primary/20 border-will-primary text-white shadow-lg shadow-will-primary/25"
-                      : "bg-gray-800/50 border-gray-700 text-gray-400 hover:bg-gray-700/50 hover:border-gray-600 hover:text-white"
+                      ? "bg-will-primary/20 border-will-primary text-gray-100 shadow-lg shadow-will-primary/25"
+                      : "bg-gray-800/50 border-gray-700 text-gray-400 hover:bg-gray-700/50 hover:border-gray-600 hover:text-gray-100"
                   }
                   hover:scale-105 active:scale-95
                 `}
@@ -119,7 +119,6 @@ export default function CardProjects() {
                   width={600}
                   height={400}
                   loading="lazy"
-                  quality={85}
                 />
               </div>
 
@@ -128,7 +127,7 @@ export default function CardProjects() {
                 {" "}
                 {/* flex-1 e flex-col aqui */}
                 {/* Título e Descrição */}
-                <h3 className="text-xl font-bold text-white mb-3">
+                <h3 className="text-xl font-bold text-gray-100 mb-3">
                   {project.title}
                 </h3>
                 <p className="text-gray-400 text-sm mb-6 grow leading-relaxed">
@@ -169,7 +168,7 @@ export default function CardProjects() {
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-medium"
+                        className="flex items-center gap-2 text-gray-400 hover:text-gray-100 transition-colors text-sm font-medium"
                       >
                         <FaExternalLinkAlt size={13} />
                         <span>Demo</span>
@@ -180,7 +179,7 @@ export default function CardProjects() {
                         href={project.repoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-medium"
+                        className="flex items-center gap-2 text-gray-400 hover:text-gray-100 transition-colors text-sm font-medium"
                       >
                         <FaGithub size={14} />
                         <span className="group-hover/link:underline">

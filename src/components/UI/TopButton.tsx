@@ -1,6 +1,6 @@
 "use client";
-import { useEffect, useState } from 'react';
-import { RiArrowUpLine } from 'react-icons/ri';
+import { useEffect, useState } from "react";
+import { RiArrowUpLine } from "react-icons/ri";
 
 export default function TopButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,16 +16,16 @@ export default function TopButton() {
       }
     };
 
-    window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility);
 
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   // Função para voltar ao topo
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
@@ -38,7 +38,7 @@ export default function TopButton() {
           <button
             type="button"
             // Classes de estilo do botão
-            className="flex justify-center items-center w-12 h-12 transition-all duration-300 ease-in-out hover:scale-110 active:scale-95 z-50 animate-fade-in bg-will-p-light p-3 rounded-full shadow-lg text-white" 
+            className="flex justify-center items-center w-12 h-12 transition-all duration-300 ease-in-out hover:scale-110 active:scale-95 z-50 animate-fade-in p-3 rounded-full bg-will-primary text-gray-100 border-transparent focus:ring-will-primary/50 shadow-lg hover:shadow-2xl hover:shadow-will-primary/25"
             onClick={scrollToTop}
             aria-label="Voltar ao topo"
           >
@@ -47,12 +47,12 @@ export default function TopButton() {
 
           {/* 2. O Tooltip */}
           <span
-            className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2  
-                       px-3 py-1.5 rounded-md bg-gray-900 text-white text-sm font-medium
+            className="absolute bottom-full mb-2  -translate-x-1/2  
+                       px-4 py-1.5 rounded-lg bg-gray-900 text-gray-300 text-sm font-medium
                        shadow-lg
                        transition-all duration-200 ease-in-out
                        scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
-                       origin-bottom whitespace-nowrap" // Impede que o texto quebre
+                       origin-bottom whitespace-nowrap inline-flex items-center"
           >
             Voltar ao topo
           </span>

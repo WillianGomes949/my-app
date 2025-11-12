@@ -27,7 +27,7 @@ export default function About() {
     </span>
   </div>
 
-  <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+  <h2 className="text-4xl md:text-5xl font-bold text-gray-100 mb-4">
     Transformando <span className="text-will-primary">ideias</span> em experiências digitais
   </h2>
 
@@ -66,7 +66,7 @@ export default function About() {
               interfaces ágeis. Sempra estudando e aprendendo.
             </p>
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-6 flex items-center">
+              <h3 className="text-2xl font-semibold text-gray-100 mb-6 flex items-center">
                 <span className="w-8 h-0.5 bg-will-primary mr-3"></span>
                 Tecnologias que Domino
               </h3>
@@ -79,7 +79,7 @@ export default function About() {
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
                     <FaRegCheckCircle className="w-5 h-5 mr-3 text-lime-400 shrink-0 group-hover:scale-110 transition-transform" />
-                    <span className="text-gray-300 group-hover:text-white transition-colors">
+                    <span className="text-gray-300 group-hover:text-gray-100 transition-colors">
                       {skill}
                     </span>
                   </li>

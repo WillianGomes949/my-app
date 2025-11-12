@@ -1,4 +1,5 @@
 // --- Definição de Tipos e Dados Mockados ---
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import {
   SiAdobephotoshop,
   SiAmazon,
@@ -168,5 +169,25 @@ const techStacks = [
   { name: "WordPress", icon: SiWordpress },
   { name: "Photoshop", icon: SiAdobephotoshop },
 ];
+const socialLinks = [
+    {
+      name: "WhatsApp",
+      href: "https://wa.me/5585988954195?text=Olá! Gostaria de conversar sobre um projeto...",
+      icon: FaWhatsapp,
+      color: "hover:text-lime-400",
+    },
+    {
+      name: "GitHub",
+      href: "https://github.com/williangomes949",
+      icon: FaGithub,
+      color: "hover:text-will-primary",
+    },
+    {
+      name: "LinkedIn",
+      href: "https://linkedin.com/in/williangomes949",
+      icon: FaLinkedin,
+      color: "hover:text-will-primary",
+    },
+  ];
 
-export { techColors, techStacks, mockProjects };
+export { techColors, techStacks, mockProjects, socialLinks};

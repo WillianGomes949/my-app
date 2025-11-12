@@ -70,7 +70,7 @@ body {
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: oklch(76.8% 0.233 130.85);
+  background-color: #7ccf00;
 }
 
 *::-webkit-scrollbar-thumb:active {

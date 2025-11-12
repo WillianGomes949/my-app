@@ -15,6 +15,8 @@ export default function Header() {
     {
       name: "WhatsApp",
       href: "https://wa.me/5585988954195?text=Quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os...",
+      target: "_blank",
+      rel: "noopener noreferrer",
       icon: <FaWhatsapp size={18} />,
     },
     { name: "Sobre", href: "#about" },
@@ -66,7 +68,7 @@ export default function Header() {
         <Link
           href="/"
           className={`text-xl font-bold transition-colors ${
-            isScrolled ? "text-gray-100" : "text-white"
+            isScrolled ? "text-gray-100" : "text-gray-100"
           }`}
         >
           Willian
@@ -79,14 +81,16 @@ export default function Header() {
             <Link
               key={link.name}
               href={link.href}
+              target={link.target}
+              rel={link.rel}
               className={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-all ${
                 isScrolled
                   ? link.name === "WhatsApp"
                     ? "text-gray-100 hover:bg-lime-50 hover:text-lime-600"
                     : "text-gray-100 hover:bg-red-50 hover:text-red-600"
                   : link.name === "WhatsApp"
-                  ? "text-white/90 hover:bg-lime-500/20 hover:text-lime-300"
-                  : "text-white/90 hover:bg-red-500/20 hover:text-red-300"
+                  ? "text-gray-100/90 hover:bg-lime-500/20 hover:text-lime-300"
+                  : "text-gray-100/90 hover:bg-red-500/20 hover:text-red-300"
               }`}
             >
               {link.icon}
@@ -102,7 +106,7 @@ export default function Header() {
           className={`rounded-lg p-2 transition-colors md:hidden ${
             isScrolled
               ? "text-gray-700 hover:bg-gray-100"
-              : "text-white hover:bg-white/10"
+              : "text-gray-100 hover:bg-gray-100/10"
           }`}
         >
           <IoMdMenu size={24} />
@@ -114,7 +118,7 @@ export default function Header() {
         <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm md:hidden">
           <div
             ref={menuRef}
-            className="absolute right-4 top-4 w-64 rounded-2xl bg-white/95 p-6 shadow-xl backdrop-blur-md"
+            className="absolute right-4 top-4 w-64 rounded-2xl bg-gray-100/95 p-6 shadow-xl backdrop-blur-md"
           >
             {/* Close Button */}
             <div className="flex justify-end">

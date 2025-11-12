@@ -16,7 +16,7 @@ export default function Projects() {
               Portfólio
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-100 mb-4">
             Meus <span className="text-will-primary">Projetos</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">

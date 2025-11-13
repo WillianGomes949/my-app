@@ -29,7 +29,7 @@ const mockProjects: Project[] = [
     title: "Projeto SorrirPrime (Clínica Demo)",
     description:
       "Conceito de site premium para clínica odontológica, focado em UI/UX e performance. Inclui sistema de agendamento dinâmico (com API fake e localStorage) e painel de admin. Construído com React, Vite, TypeScript e Tailwind CSS.",
-    imageUrl: "/images/sorrir-prime.png",
+    imageUrl: "/images/sorrir-prime.webp",
     tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
     liveUrl: "https://projeto-sorrir-prime.vercel.app/",
     repoUrl: "",

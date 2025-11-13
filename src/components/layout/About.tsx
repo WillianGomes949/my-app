@@ -31,7 +31,7 @@ export default function About() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-100 mb-4">
-            Eu ajudo negócios locais{" "}
+            Eu ajudo 
             <span className="text-will-primary"> negócios locais </span> a
             atrair mais clientes com sites modernos.
           </h2>

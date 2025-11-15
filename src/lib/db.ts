@@ -30,7 +30,7 @@ const mockProjects: Project[] = [
     description:
       "Escritorio de advocacia especializado em Direito Trabalhista. Responsivo, com botão de whatsapp e formulario de contato. Construído com React, Vite, TypeScript e Tailwind CSS.",
     imageUrl: "/images/veritas-advogados.webp",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    tags: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vercel"],
     liveUrl: "https://veritas-advocacia-eta.vercel.app/",
     repoUrl: "",
   },

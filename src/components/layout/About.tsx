@@ -30,10 +30,10 @@ export default function About() {
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-100 mb-4">
-            Eu ajudo 
-            <span className="text-will-primary"> negócios locais </span> a
-            atrair mais clientes com sites modernos.
+          <h2 className="relative text-4xl md:text-5xl font-bold text-gray-100 mb-4">
+            Eu ajudo  negócios locais a 
+            <span className="text-will-primary"> atrair mais clientes </span>
+           com sites modernos.
           </h2>
 
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
@@ -65,12 +65,14 @@ export default function About() {
                 moderno, eu cuido de tudo para você.
               </p>
               <p className="text-lg text-will-light mb-6 leading-relaxed">
-                Minha jornada começou com Wordpress, HTML e CSS, e rapidamente
-                evolui para o ecossistema JavaScript moderno. Hoje, meu foco é
-                construir aplicações web robustas e escaláveis com React,
-                Next.js e TypeScript, utilizando AWS para infraestrutura e
-                Tailwind CSS para interfaces ágeis. Sempra estudando e
-                aprendendo.
+                Minha jornada começou no WordPress, onde aprendi a criar sites
+                que resolvem problemas de negócios. Hoje, levo essa mentalidade
+                para o ecossistema JavaScript moderno. Meu foco é construir
+                soluções web — de sites institucionais a aplicações complexas —
+                que sejam rápidas, seguras e fáceis de usar. Para isso, utilizo
+                as melhores ferramentas: React, Next.js e TypeScript para
+                performance, Tailwind CSS para um design ágil e AWS para uma
+                infraestrutura confiável.
               </p>
             </div>
 

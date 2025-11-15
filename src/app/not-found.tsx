@@ -14,7 +14,7 @@ export default function NotFound() {
 
       {/* Subtítulo */}
       <h2 className="text-2xl md:text-3xl font-bold text-gray-50 mb-4">
-        Sistema não encontrado!
+        Página não encontrada!
       </h2>
 
       {/* Texto Descritivo */}

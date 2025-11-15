@@ -130,7 +130,7 @@ const allProjects: Project[] = [
       "Sistema de controle de validade de produtos com **integração com Google Sheets**. Permite cadastro, consulta e alertas, resolvendo um problema de logística interna.",
     imageUrl: "/images/gerenciador-validades.webp",
     tags: ["API Rest", "Next.js", "Google Scripts", "React"],
-    liveUrl: "https://horarios-onibus-fortaleza.vercel.app/", // Live URL parece estar errada, verificar
+    liveUrl: "https://gerenciador-de-validades-sigma.vercel.app/", // Live URL parece estar errada, verificar
   },
   {
     id: 2,

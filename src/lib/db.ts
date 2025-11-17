@@ -69,7 +69,7 @@ const featuredProjects: Project[] = [
     description:
       "Conceito premium para clínicas, focado em UI/UX e performance. Inclui um **sistema de agendamento dinâmico** (com API fake) e um **painel de admin** para gerenciar as solicitações.",
     imageUrl: "/images/sorrir-prime.webp",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Admin"],
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
     liveUrl: "https://projeto-sorrir-prime.vercel.app/",
     repoUrl: "",
   },

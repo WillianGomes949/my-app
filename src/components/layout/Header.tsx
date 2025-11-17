@@ -12,6 +12,10 @@ export default function Header() {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const navLinks = [
+    { name: "Sobre", href: "/#about" },
+    { name: "Projetos", href: "/#projects" },
+    { name: "Contato", href: "/#contact" },
+    { name: "Preço", href: "/preco" },
     {
       name: "WhatsApp",
       href: "https://wa.me/5585988954195?text=Quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os...",
@@ -19,10 +23,6 @@ export default function Header() {
       rel: "noopener noreferrer",
       icon: <FaWhatsapp size={18} />,
     },
-    { name: "Sobre", href: "/#about" },
-    { name: "Projetos", href: "/#projects" },
-    { name: "Contato", href: "/#contact" },
-    { name: "Preço", href: "/preco" },
   ];
 
   const handleLinkClick = () => {
@@ -87,11 +87,11 @@ export default function Header() {
               className={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-all ${
                 isScrolled
                   ? link.name === "WhatsApp"
-                    ? "text-gray-100 hover:bg-lime-50 hover:text-lime-600"
-                    : "text-gray-100 hover:bg-red-50 hover:text-red-600"
+                    ? " hover:bg-lime-50 hover:text-lime-600 inline-flex items-center px-4 py-2 rounded-full bg-will-accent/10 border border-will-accent/20 text-will-accent text-sm font-medium"
+                    : "text-gray-100 hover:bg-red-50 hover:text-gray-600"
                   : link.name === "WhatsApp"
-                  ? "text-gray-100/90 hover:bg-lime-500/20 hover:text-lime-300"
-                  : "text-gray-100/90 hover:bg-red-500/20 hover:text-red-300"
+                  ? " hover:bg-lime-500/20 hover:text-lime-300 inline-flex items-center px-4 py-2 rounded-full bg-will-accent/10 border border-will-accent/20 text-will-accent text-sm font-medium"
+                  : "text-gray-100/90 hover:bg-gray-500/50 hover:text-gray-100"
               }`}
             >
               {link.icon}

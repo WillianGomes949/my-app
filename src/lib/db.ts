@@ -30,7 +30,7 @@ interface MeusDados {
   nome: string,
   phoneNumber: string,
   email: string,
-  whatsappUrl:string,
+  whatsappUrl: string,
   localizacao: string,
   instagram: string,
   linkedin: string,
@@ -39,7 +39,7 @@ interface MeusDados {
 }
 
 // --- BANCO DE DADOS DE PROJETOS ---
-const meusDados: MeusDados= {
+const meusDados: MeusDados = {
   nome: "Willian Gomes",
   phoneNumber: "+55 (85) 9.8895-4195",
   email: "williangomes949@gmail.com",
@@ -53,16 +53,16 @@ const meusDados: MeusDados= {
 
 
 const featuredProjects: Project[] = [
-    {
-    id: 13,
-    title: "Véritas Advogados",
-    description:
-      "Site institucional para um escritório de advocacia focado em transmitir credibilidade e capturar leads. O design limpo e o formulário de contato direto ajudam a converter visitantes em clientes.",
-    imageUrl: "/images/veritas-advogados.webp",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vercel"],
-    liveUrl: "https://veritas-advocacia-eta.vercel.app/",
-    repoUrl: "",
-  },
+  //   {
+  //   id: 13,
+  //   title: "Véritas Advogados",
+  //   description:
+  //     "Site institucional para um escritório de advocacia focado em transmitir credibilidade e capturar leads. O design limpo e o formulário de contato direto ajudam a converter visitantes em clientes.",
+  //   imageUrl: "/images/veritas-advogados.webp",
+  //   tags: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vercel"],
+  //   liveUrl: "https://veritas-advocacia-eta.vercel.app/",
+  //   repoUrl: "",
+  // },
   {
     id: 12,
     title: "Véritas Advogados",

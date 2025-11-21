@@ -5,8 +5,22 @@ body {
   color: white;
 }
 
-.swiper-marquee .swiper-wrapper {
-  transition-timing-function: linear !important;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .animate-scroll {
+    animation: scroll 5s linear infinite;
+  }
 }
 
 @theme {
@@ -28,28 +42,7 @@ body {
   --animate-fade-in-up: fade-in-up 0.6s ease-out forwards;
   --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
   --animate-gradient-flow: gradient-flow 8s ease infinite;
-
-  @keyframes gradient-flow {
-    0%,
-    100% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-  }
-  @keyframes fade-in-scale {
-    0% {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
 }
-
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
   height: 10px;

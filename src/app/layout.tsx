@@ -18,13 +18,13 @@ export const zenKakuGothicNew = Zen_Kaku_Gothic_New({
   style: 'normal',
 });
 
-export const tajawal = Tajawal({
+const tajawal = Tajawal({
   variable: "--font-tajawal",
   subsets: ["latin"],
   weight: ['300', '400', '500', '700'],   
 })
 
-export const googleSansCode = Google_Sans_Code({
+const googleSansCode = Google_Sans_Code({
   variable: "--font-google-sans-code",
   subsets: ["latin"],
   weight: ['300', '400', '500', '700'],
@@ -47,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${zenKakuGothicNew.variable}
+        className={`${zenKakuGothicNew.variable} ${tajawal.variable} ${googleSansCode.variable} 
         
          font-sansantialiased`}
       >

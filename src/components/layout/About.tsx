@@ -41,7 +41,7 @@ export default function About() {
               alt="Willian Gomes"
               width={500}
               height={500}
-              loading="eager"
+              loading="lazy"
               className="w-full object-cover grayscale-0 group-hover:grayscale-0 transition-all duration-500 rounded-2xl"
             />
           </div>

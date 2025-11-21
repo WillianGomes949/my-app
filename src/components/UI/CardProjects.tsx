@@ -83,8 +83,8 @@ export default function CardProjects() {
                     src={project.imageUrl}
                     alt={project.title}
                     className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
-                    width={600}
-                    height={400}
+                    width={300}
+                    height={200}
                     loading="lazy"
                   />
                 </div>

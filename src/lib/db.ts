@@ -53,6 +53,16 @@ const meusDados: MeusDados= {
 
 
 const featuredProjects: Project[] = [
+    {
+    id: 13,
+    title: "Véritas Advogados",
+    description:
+      "Site institucional para um escritório de advocacia focado em transmitir credibilidade e capturar leads. O design limpo e o formulário de contato direto ajudam a converter visitantes em clientes.",
+    imageUrl: "/images/veritas-advogados.webp",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vercel"],
+    liveUrl: "https://veritas-advocacia-eta.vercel.app/",
+    repoUrl: "",
+  },
   {
     id: 12,
     title: "Véritas Advogados",

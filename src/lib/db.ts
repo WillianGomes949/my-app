@@ -27,15 +27,15 @@ interface Project {
 }
 
 interface MeusDados {
-  nome: string,
-  phoneNumber: string,
-  email: string,
-  whatsappUrl: string,
-  localizacao: string,
-  instagram: string,
-  linkedin: string,
-  github: string,
-  sobreMim: string,
+  nome: string;
+  phoneNumber: string;
+  email: string;
+  whatsappUrl: string;
+  localizacao: string;
+  instagram: string;
+  linkedin: string;
+  github: string;
+  sobreMim: string;
 }
 
 // --- BANCO DE DADOS DE PROJETOS ---
@@ -43,25 +43,36 @@ const meusDados: MeusDados = {
   nome: "Willian Gomes",
   phoneNumber: "+55 (85) 9.8895-4195",
   email: "williangomes949@gmail.com",
-  whatsappUrl: "https://wa.me/5585988954195?text=Olá! Gostaria de conversar sobre seus serviços...",
+  whatsappUrl:
+    "https://wa.me/5585988954195?text=Olá! Gostaria de conversar sobre seus serviços...",
   instagram: "https://www.instagram.com/williangomes949/",
   linkedin: "https://www.linkedin.com/in/williangomes949/",
   github: "https://github.com/williangomes949",
   localizacao: "Fortaleza - CE, Brasil",
   sobreMim: `Sou um desenvolvedor apaixonado por criar soluções digitais que realmente fazem a diferença. Com experiência em, transformo ideias em realidade, focando sempre na experiência do usuário e na performance. Minha jornada é impulsionada pela busca contínua por aprendizado e pela vontade de construir produtos que impactam positivamente.`,
-}
-
+};
 
 const featuredProjects: Project[] = [
-    {
+  {
+    id: 14,
+    title: "Website de Barbearia",
+    description:
+      "Página inicial completa (landing page) para um serviço de barbearia, com agendamento e apresentando informações sobre serviços em destaque, galeria de trabalhos, depoimentos de clientes e informações de contato/localização.",
+    imageUrl: "/images/barbearia.webp",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vercel"],
+    liveUrl: "https://barbearia-cortepro.vercel.app/",
+    repoUrl: "",
+  },
+  {
     id: 13,
     title: "Churros Gourmet - Landing Page",
-    description: "Landing page moderna e responsiva desenvolvida para uma doceria artesanal. O projeto foca em uma UI 'apetitosa', utilizando uma paleta de cores quentes e tipografia lúdica para maximizar o apelo visual. Conta com vitrine de produtos, galeria interativa e integração direta para pedidos via WhatsApp.",
+    description:
+      "Landing page moderna e responsiva desenvolvida para uma doceria artesanal. O projeto foca em uma UI 'apetitosa', utilizando uma paleta de cores quentes e tipografia lúdica para maximizar o apelo visual. Conta com vitrine de produtos, galeria interativa e integração direta para pedidos via WhatsApp.",
     imageUrl: "/images/churros.webp",
     tags: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vercel"],
     liveUrl: "https://churros-pearl.vercel.app/",
     repoUrl: "",
-},
+  },
   {
     id: 12,
     title: "Véritas Advogados",
@@ -241,4 +252,11 @@ const socialLinks = [
   },
 ];
 
-export { techColors, techStacks, featuredProjects, allProjects, socialLinks, meusDados };
+export {
+  techColors,
+  techStacks,
+  featuredProjects,
+  allProjects,
+  socialLinks,
+  meusDados,
+};

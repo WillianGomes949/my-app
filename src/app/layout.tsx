@@ -1,37 +1,23 @@
 import type { Metadata } from "next";
-import { Zen_Kaku_Gothic_New, Tajawal, Google_Sans_Code } from "next/font/google";
+import { Montserrat, Boldonse } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TopButton from "@/components/UI/TopButton";
 import { SimpleWhatsAppButton } from "@/components/UI/WhatsAppButton";
 
-
-export const zenKakuGothicNew = Zen_Kaku_Gothic_New({
-  variable: "--font-zen-kaku-gothic-new",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: ['300', '400', '500', '700'],
-  display: 'swap',
-  fallback: ['sans-serif'],
-  preload: true,
-  adjustFontFallback: true,
-  style: 'normal',
+  weight: ["300", "400", "500", "700"],
 });
-
-const tajawal = Tajawal({
-  variable: "--font-tajawal",
+const boldonse = Boldonse({
+  variable: "--font-boldonse",
   subsets: ["latin"],
-  weight: ['300', '400', '500', '700'],   
-})
-
-const googleSansCode = Google_Sans_Code({
-  variable: "--font-google-sans-code",
-  subsets: ["latin"],
-  weight: ['300', '400', '500', '700'],
-  display: 'swap',
-  fallback: ['sans-serif'],
-})
-
+  weight: ["400"],
+  display: "swap",
+  fallback: ["Helvetica", "Arial", "sans-serif"],
+});
 
 export const metadata: Metadata = {
   title: "Willian Gomes - Desenvolvedor FullStack",
@@ -47,14 +33,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${zenKakuGothicNew.variable} ${tajawal.variable} ${googleSansCode.variable} 
-         font-sansantialiased`}
+        className={`${montserrat.variable} ${boldonse.variable} antialiased`}
       >
         <Header />
         {children}
         <Footer />
         <TopButton />
-        <SimpleWhatsAppButton position='bottom-left'/>
+        <SimpleWhatsAppButton position="bottom-left" />
       </body>
     </html>
   );

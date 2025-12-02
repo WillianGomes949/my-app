@@ -78,7 +78,7 @@ const featuredProjects: Project[] = [
     title: "Véritas Advogados",
     description:
       "Site institucional para um escritório de advocacia focado em transmitir credibilidade e capturar leads. O design limpo e o formulário de contato direto ajudam a converter visitantes em clientes.",
-    imageUrl: "/images/veritas-advogados.webp",
+    imageUrl: "/images/veritas-advogados2.webp",
     tags: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vercel"],
     liveUrl: "https://veritas-advocacia-eta.vercel.app/",
     repoUrl: "",

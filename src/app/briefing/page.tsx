@@ -2,7 +2,7 @@
 "use client";
 
 import ProjectBriefingForm from "@/components/comercial/ProjectBriefingForm";
-import PriceGrade from "@/components/UI/PriceGrade";
+import PayGrid from "@/components/UI/PayGrid";
 import { SectionTitle } from "@/components/UI/SectionTitle";
 
 export default function BriefingPage() {
@@ -16,7 +16,7 @@ export default function BriefingPage() {
       />
       <div className="container mx-auto  pb-16 max-w-4xl flex flex-col gap-8 ">
         <ProjectBriefingForm />
-        <PriceGrade/>
+        <PayGrid/>
       </div>
     </div>
   );

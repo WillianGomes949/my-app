@@ -5,7 +5,7 @@ import { pricingData, ServiceCard, MaintenancePlan } from "@/data/precodb";
 import { meusDados } from "@/data/db"; 
 import {BiCheck } from "react-icons/bi";
 import { RxRocket } from "react-icons/rx";
-import PriceGrade from "../UI/PriceGrade";
+import PayGrid from "../UI/PayGrid";
 
 export default function PortfolioPricing() {
   return (
@@ -94,7 +94,7 @@ export default function PortfolioPricing() {
         {/* =========================================
             SESSÃO DE PAGAMENTO
            ========================================= */}
-        <PriceGrade/>
+        <PayGrid/>
 
         {/* =========================================
             GRADE DE PREÇOS (ID: precos)

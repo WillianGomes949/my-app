@@ -2,7 +2,7 @@ import { pricingData } from "@/data/precodb";
 import { BiCreditCard } from "react-icons/bi";
 import { BsQrCode } from "react-icons/bs";
 
-export default function PriceGrade (){
+export default function PayGrid (){
     return(
         <section className="container mx-auto mb-16">
                   <div className="bg-gray-800/80 backdrop-blur-md p-8 rounded-3xl border border-gray-700 shadow-2xl">

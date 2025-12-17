@@ -10,7 +10,7 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import MyButton from "./MyButton";
 
 const techTags = ["Todos", "WordPress", "JavaScript", "React", "Next.js"];
-const PROJECTS_PER_PAGE = 12;
+const PROJECTS_PER_PAGE = 15;
 
 export default function CardProjects() {
   const [activeFilter, setActiveFilter] = useState("Todos");

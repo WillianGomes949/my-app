@@ -37,7 +37,7 @@ export default function StackMarquee() {
   ];
 
   return (
-    <div className="-translate-y-8 w-full h-15 py-34 flex justify-center items-center group overflow-hidden">
+    <div className="-translate-y-8 w-full h-12 py-24 flex justify-center items-center group overflow-hidden">
       <div className="w-11/12 md:max-w-7xl mx-auto px-4 mask-x-from-90% mask-x-to-95%">
         <div className="overflow-hidden">
           <div className="flex space-x-12 animate-scroll">

@@ -28,6 +28,7 @@ interface Project {
 
 interface MeusDados {
   nome: string;
+  sobrenome: string;
   phoneNumber: string;
   email: string;
   whatsappUrl: string;
@@ -41,15 +42,15 @@ interface MeusDados {
 // --- BANCO DE DADOS DE PROJETOS ---
 const meusDados: MeusDados = {
   nome: "Willian Gomes",
-  phoneNumber: "+55 (85) 9.8895-4195",
+  sobrenome: "Desenvolvimento Web",
+  phoneNumber: "+55 (85) 98895-4195",
   email: "williangomes949@gmail.com",
-  whatsappUrl:
-    "https://wa.me/5585988954195",
+  whatsappUrl: "https://wa.me/5585988954195",
   instagram: "https://www.instagram.com/williangomes949/",
   linkedin: "https://www.linkedin.com/in/williangomes949/",
   github: "https://github.com/williangomes949",
   localizacao: "Fortaleza - CE, Brasil",
-  sobreMim: `Sou um desenvolvedor apaixonado por criar soluções digitais que realmente fazem a diferença. Com experiência em, transformo ideias em realidade, focando sempre na experiência do usuário e na performance. Minha jornada é impulsionada pela busca contínua por aprendizado e pela vontade de construir produtos que impactam positivamente.`,
+  sobreMim: `Desenvolvedor Web focado em performance e resultados. Especialista no ecossistema moderno (Next.js, React e Tailwind CSS), transformo desafios complexos em interfaces limpas, rápidas e eficientes. Meu objetivo não é apenas entregar código, mas criar soluções digitais que impulsionam o crescimento real do seu negócio.`,
 };
 
 const featuredProjects: Project[] = [

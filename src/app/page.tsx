@@ -14,7 +14,6 @@ export default function Home() {
       <Hero />
       <StackMarquee />
       <About />
-      <StackMarquee />
       <Projects />
       <Contact />
       <div className="p-4 md:p-0">

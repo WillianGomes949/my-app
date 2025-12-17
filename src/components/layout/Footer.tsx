@@ -1,4 +1,4 @@
-import { socialLinks } from "@/data/db";
+import { meusDados, socialLinks } from "@/data/db";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="mb-6 text-center md:mb-0 md:text-left">
             <div className="flex items-center justify-center md:justify-start mb-2">
               <span className="text-xl font-bold text-gray-100 mr-2">
-                Willian<span className="text-will-primary">.</span>
+                {meusDados.nome}<span className="text-will-primary font-extralight"> | {meusDados.sobrenome}</span>
               </span>
             </div>
             <p className="text-sm mb-2">

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { HiOutlineX } from "react-icons/hi";
 import { IoMdMenu } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
+import { meusDados } from "@/data/db";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -73,8 +74,8 @@ export default function Header() {
             isScrolled ? "text-gray-100" : "text-gray-100"
           }`}
         >
-          Willian
-          <span className="text-red-500">.</span>
+         {meusDados.nome} 
+          <span className="text-will-accent font-extralight"> | {meusDados.sobrenome}</span>
         </Link>
 
         {/* Desktop Navigation */}

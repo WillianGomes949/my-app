@@ -1,0 +1,42 @@
+// src/components/ScrollProgress.tsx
+'use client';
+
+import { useEffect, useState } from 'react';
+
+export default function ScrollProgress() {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calcula a altura total da página disponível para scroll
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      
+      // Evita divisão por zero se a página for curta
+      if (totalHeight > 0) {
+        // Calcula a porcentagem
+        const scrollPosition = window.scrollY;
+        const scrollPercentage = (scrollPosition / totalHeight) * 100;
+        setWidth(scrollPercentage);
+      }
+    };
+
+    // Adiciona o evento
+    window.addEventListener('scroll', handleScroll);
+
+    // Limpa o evento ao desmontar o componente
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    // Container da barra (fixo no topo)
+    <div className="fixed bottom-0 left-0 w-full h-1 z-50 bg-transparent">
+      {/* A barra colorida que cresce */}
+      <div 
+        className="h-full bg-will-primary transition-all duration-150 ease-out rounded-4xl"
+        style={{ width: `${width}%` }}
+      />
+    </div>
+  );
+}

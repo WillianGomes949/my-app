@@ -3,8 +3,8 @@ import { Montserrat, Boldonse } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { SimpleWhatsAppButton } from "@/components/UI/WhatsAppButton";
 import BotoesInf from "@/components/UI/BotoesInf";
+import ScrollProgress from "@/components/UI/ScrollProgress";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -36,9 +36,10 @@ export default function RootLayout({
         className={`${montserrat.variable} ${boldonse.variable} antialiased`}
       >
         <Header />
+        <ScrollProgress />
         {children}
         <Footer />
-        <BotoesInf/>
+        <BotoesInf />
       </body>
     </html>
   );

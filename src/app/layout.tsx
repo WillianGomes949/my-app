@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     siteName: "Willian Gomes Portfolio",
     images: [
       {
-        url: "/og-image.png", // A imagem que deve estar na pasta public
+        url: "/og-image.webp", // A imagem que deve estar na pasta public
         width: 1200,
         height: 630,
         alt: "Portfolio de Willian Gomes - Desenvolvimento Web",

@@ -14,13 +14,13 @@ import {
 const techStack = [
   { icon: SiHtml5, name: "HTML5" },
   { icon: SiCss3, name: "CSS3" },
+  { icon: SiWordpress, name: "WordPress" },
   { icon: SiJavascript, name: "JavaScript" },
-  { icon: SiTypescript, name: "TypeScript" },
   { icon: SiReact, name: "React" },
+  { icon: SiTypescript, name: "TypeScript" },
   { icon: SiNextdotjs, name: "Next.js" },
   { icon: SiTailwindcss, name: "Tailwind" },
   { icon: SiAmazon, name: "AWS" },
-  { icon: SiWordpress, name: "WordPress" },
   { icon: SiAdobephotoshop, name: "Photoshop" },
 ];
 
@@ -33,7 +33,6 @@ export default function StackMarquee() {
     ...techStack,
     ...techStack,
     ...techStack,
-
   ];
 
   return (

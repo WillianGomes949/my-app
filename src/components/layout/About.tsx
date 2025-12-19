@@ -32,7 +32,7 @@ export default function About() {
               width={400}
               height={400}
               loading="lazy"
-              className="w-full object-cover grayscale-0 group-hover:grayscale-0 transition-all duration-500 rounded-2xl"
+              className="h-140 w-full object-cover object-top grayscale-0 group-hover:grayscale-0 transition-all duration-500 rounded-2xl"
             />
           </div>
 
@@ -44,8 +44,8 @@ export default function About() {
                 resultados.
               </p>
               <p className="text-lg text-will-light mb-6 leading-relaxed">
-                Unindo a versatilidade do WordPress à potência do ecossistema
-                moderno (Next.js, React e AWS), crio soluções web rápidas,
+                Do WordPress à potência do ecossistema
+                moderno, crio soluções web rápidas,
                 seguras e escaláveis. Seja um site institucional ou uma
                 aplicação complexa, meu objetivo é garantir que a tecnologia
                 impulsione o crescimento do seu negócio, enquanto você foca no

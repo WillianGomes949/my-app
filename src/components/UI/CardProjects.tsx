@@ -11,7 +11,7 @@ import MyButton from "./MyButton";
 import { BsFillStoplightsFill } from "react-icons/bs";
 
 const techTags = ["Todos", "WordPress", "React", "Next.js", "JavaScript"];
-const PROJECTS_PER_PAGE = 9;
+const PROJECTS_PER_PAGE = 6;
 
 export default function CardProjects() {
   const [activeFilter, setActiveFilter] = useState("Todos");

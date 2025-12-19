@@ -41,8 +41,8 @@ interface MeusDados {
 
 // --- BANCO DE DADOS DE PROJETOS ---
 const meusDados: MeusDados = {
-  nome: "Willian Gomes",
-  sobrenome: "Desenvolvimento Web",
+  nome: "Willian",
+  sobrenome: "Gomes",
   phoneNumber: "+55 (85) 98895-4195",
   email: "williangomes949@gmail.com",
   whatsappUrl: "https://wa.me/5585988954195",

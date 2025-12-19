@@ -75,7 +75,7 @@ export default function Header() {
           }`}
         >
          {meusDados.nome} 
-          <span className="text-will-accent font-extralight"> | {meusDados.sobrenome}</span>
+          <span className="text-will-primary font-black">.</span>
         </Link>
 
         {/* Desktop Navigation */}

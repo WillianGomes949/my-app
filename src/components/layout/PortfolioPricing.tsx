@@ -9,8 +9,8 @@ import PayGrid from "../UI/PayGrid";
 
 export default function PortfolioPricing() {
   return (
-    <section className="min-h-screen bg-gray-900 text-gray-100 antialiased py-24 md:py-34">
-      <div className="container mx-auto px-2 md:px-6 py-12">
+    <section className="min-h-screen bg-gray-900 text-gray-100 antialiased">
+      <div className="container mx-auto px-2 md:px-6">
         {/* =========================================
             HEADER & DESTAQUES
            ========================================= */}
@@ -305,7 +305,7 @@ function MaintenanceCard({ plan }: { plan: MaintenancePlan }) {
       className={`group bg-gray-800/50 backdrop-blur-sm p-6 rounded-3xl shadow-2xl transition-all duration-300 group text-center flex flex-col h-full
       ${
         isRecommended
-          ? "border border-will-accent/40 relative shadow-will-accent/10 scale-105 z-10"
+          ? "border border-will-accent/40 relative shadow-will-accent/10 z-10"
           : "border border-gray-700/50 hover:border-will-accent/30"
       }`}
     >

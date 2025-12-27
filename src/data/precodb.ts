@@ -82,11 +82,12 @@ export const pricingData = {
         { label: "Unidade:", price: "R$ 45 - R$ 70" },
         { label: "PACOTE 4/mês:", price: "R$ 160 - R$ 250" },
         { label: "PACOTE 8/mês:", price: "R$ 320 - R$ 480" },
-        { label: "PACOTE 12/mês:", price: "R$ 450 - R$ 680" },
+        // { label: "PACOTE 12/mês:", price: "R$ 450 - R$ 680" },
       ],
     },
     {
       title: "Instagram - Posts estáticos",
+      description: "Arte estática para feed ou stories.",
       items: [
         { label: "Unidade:", price: "R$ 25 - R$ 40" },
         { label: "PACOTE 10:", price: "R$ 180 - R$ 300" },
@@ -95,9 +96,12 @@ export const pricingData = {
     },
     {
       title: "Carrossel / Reels",
+      description:"Criação de carrosséis e vídeos curtos para Instagram.",
       items: [
         { label: "Carrossel (8 - 10 slides):", price: "R$ 60 - R$ 90" },
-        { label: "Reels (roteiro + edição simples):", price: "R$ 60 - R$ 100" },
+        { label: "Reels (roteiro + edição simples):", price: "R$ 60 - R$ 100" },        
+        { label: "Reels (edição profissional):", price: "R$ 120 - R$ 250" },
+        
       ],
     },
   ] as ServiceCard[],

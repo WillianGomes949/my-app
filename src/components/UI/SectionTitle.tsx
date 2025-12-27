@@ -2,8 +2,8 @@
 
 interface SectionTitleProps {
   section?: string;
-  subtitle: string;
-  title: string;
+  subtitle?: string;
+  title?: string;
   className?: string; // Para espaçamento (ex: "mb-12")
 }
 

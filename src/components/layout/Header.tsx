@@ -66,7 +66,7 @@ export default function Header() {
           : "bg-transparent py-4"
       }`}
     >
-      <nav className="container mx-auto flex max-w-6xl items-center justify-between px-4">
+      <nav className="container mx-auto flex max-w-7xl items-center justify-between px-4">
         {/* Logo */}
         <Link
           href="/"

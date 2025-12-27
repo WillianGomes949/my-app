@@ -16,7 +16,7 @@ export default function Hero() {
         </span>
       </div>
 
-      <h1 className="text-3xl md:text-5xl lg:text-6xl mt-6 mb-6 bg-size-[200%_200%] animate-gradient-flow bg-linear-to-r from-will-primary via-will-p-light to-will-accent bg-clip-text text-transparent flex flex-col items-center justify-center md:flex-row gap-2 leading-relaxed font-bold text-center max-w-5xl font-boldonse">
+      <h1 className="text-3xl md:text-5xl lg:text-6xl mt-6 mb-6 bg-size-[200%_200%] animate-gradient-flow bg-linear-to-r from-will-primary via-will-p-light to-will-accent bg-clip-text text-transparent flex flex-col items-center justify-center md:flex-row gap-2 leading-relaxed font-bold text-center max-w-6xl font-boldonse">
         <div>
           <div>
             <span className="text-gray-100">Desenvolvimento,</span>
@@ -27,7 +27,7 @@ export default function Hero() {
         </div>
       </h1>
 
-      <p className="text-lg text-center mb-8 text-will-light max-w-2xl mx-auto leading-relaxed">
+      <p className="text-lg text-center mb-8 text-will-light max-w-4xl mx-auto leading-relaxed">
         Do WordPress a aplicações React.js, entrego
         a tecnologia para o seu negócio crescer e se destacar.
       </p>

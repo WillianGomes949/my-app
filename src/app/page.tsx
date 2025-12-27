@@ -6,18 +6,18 @@ import Projects from "@/components/layout/Projects"; // Vamos criar este
 import Contact from "@/components/layout/Contact";
 import StackMarquee from "@/components/UI/StackMarquee";
 import PayGrid from "@/components/UI/PayGrid";
+import SiteBenefits from "@/components/layout/SiteBenefits";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <StackMarquee />
+      <SiteBenefits />
       <About />
       <Projects />
       <Contact />
-      <div className="p-4 md:p-0">
-        <PayGrid />
-      </div>
+      <PayGrid />
     </main>
   );
 }

@@ -1,5 +1,5 @@
 // --- Definição de Tipos e Dados Mockados ---
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import {
   SiAdobephotoshop,
   SiAmazon,
@@ -46,7 +46,7 @@ const meusDados: MeusDados = {
   phoneNumber: "+55 (85) 98895-4195",
   email: "williangomes949@gmail.com",
   whatsappUrl: "https://wa.me/5585988954195",
-  instagram: "https://www.instagram.com/williangomes949/",
+  instagram: "https://www.instagram.com/williangomesdev/",
   linkedin: "https://www.linkedin.com/in/williangomes949/",
   github: "https://github.com/williangomes949",
   localizacao: "Fortaleza - CE, Brasil",
@@ -57,7 +57,8 @@ const featuredProjects: Project[] = [
   {
     id: 15,
     title: "Arquitetura Moderna",
-    description: "Website completo para escritório de arquitetura com showcase de projetos, agendamento de consultorias virtuais, galeria interativa. Interface moderna com animações suaves e otimizada para dispositivos móveis.",
+    description:
+      "Website completo para escritório de arquitetura com showcase de projetos, agendamento de consultorias virtuais, galeria interativa. Interface moderna com animações suaves e otimizada para dispositivos móveis.",
     imageUrl: "/images/architecture.webp",
     tags: ["React 18", "TypeScript", "Tailwind CSS", "Next.js", "Vercel"],
     liveUrl: "https://arquitetura-iota.vercel.app/",
@@ -140,10 +141,11 @@ const featuredProjects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript", "Vercel"],
     liveUrl: "https://responsive-construction-website-chi.vercel.app/",
   },
-   {
+  {
     id: 19,
     title: "Ninja Shop - E-commerce de Moda (WordPress)",
-    description: "Loja virtual moderna com categorias de moda feminina e masculina, carrinho de compras e área de promoções.",
+    description:
+      "Loja virtual moderna com categorias de moda feminina e masculina, carrinho de compras e área de promoções.",
     imageUrl: "/images/loja-wordpress.webp",
     tags: ["WordPress", "Elementor", "PHP"],
     liveUrl: "https://lojavirtual.williangomesdev.com/",
@@ -151,7 +153,8 @@ const featuredProjects: Project[] = [
   {
     id: 18,
     title: "GymFit - Landing Page Academia (WordPress)",
-    description: "Site para academia com foco em conversão, apresentando modalidades, planos e botão para agendar aula grátis.",
+    description:
+      "Site para academia com foco em conversão, apresentando modalidades, planos e botão para agendar aula grátis.",
     imageUrl: "/images/academia-wordpress.webp",
     tags: ["WordPress", "Elementor", "PHP"],
     liveUrl: "https://gymfit.williangomesdev.com/",
@@ -159,7 +162,8 @@ const featuredProjects: Project[] = [
   {
     id: 17,
     title: "Clínica Saúde Center (WordPress)",
-    description: "Site institucional para área da saúde, com apresentação de doutores, departamentos e funcionalidade de agendamento.",
+    description:
+      "Site institucional para área da saúde, com apresentação de doutores, departamentos e funcionalidade de agendamento.",
     imageUrl: "/images/clinica-wordpress.webp",
     tags: ["WordPress", "Elementor", "PHP"],
     liveUrl: "https://clinica.williangomesdev.com/",
@@ -167,7 +171,8 @@ const featuredProjects: Project[] = [
   {
     id: 16,
     title: "ImobNinja - Portal Imobiliário (WordPress)",
-    description: "Plataforma para imobiliária com sistema de busca avançada de imóveis, login de usuários e cadastro de propriedades.",
+    description:
+      "Plataforma para imobiliária com sistema de busca avançada de imóveis, login de usuários e cadastro de propriedades.",
     imageUrl: "/images/imobiliaria-wordpress.webp",
     tags: ["WordPress", "Elementor", "PHP"],
     liveUrl: "https://imobiliaria.williangomesdev.com/",
@@ -280,6 +285,12 @@ const socialLinks = [
     href: "https://wa.me/5585988954195?text=Olá! Gostaria de conversar sobre um projeto...",
     icon: FaWhatsapp,
     color: "hover:text-lime-400",
+  },
+  {
+    name: "Instagram",
+    href: "https://instagram.com/williangomesdev",
+    icon: FaInstagram,
+    color: "hover:text-will-primary",
   },
   {
     name: "GitHub",

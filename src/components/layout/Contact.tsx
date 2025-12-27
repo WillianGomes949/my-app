@@ -8,6 +8,7 @@ import {
   FaGithub,
   FaWhatsapp,
   FaMapMarkerAlt,
+  FaInstagram,
 } from "react-icons/fa";
 import MyButton from "../UI/MyButton";
 import emailjs from "emailjs-com";
@@ -95,7 +96,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-12 md:py-24 bg-gray-900 text-gray-100">
-      <div className="container mx-auto max-w-6xl px-4">
+      <div className="container mx-auto max-w-7xl px-4">
         <SectionTitle
             section="Contato"
             subtitle="Pronto para ter um site que traz resultados? Me mande uma mensagem. Entre em contato e vamos conversar sobre seu projeto."
@@ -172,6 +173,15 @@ export default function Contact() {
                 Redes Sociais
               </h4>
               <div className="flex space-x-4">
+                 <a
+                  href={`${meusDados.instagram}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-800 p-3 rounded-xl hover:bg-will-primary/20 hover:scale-110 transition-all duration-300"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram className="text-xl text-gray-300 hover:text-will-primary" />
+                </a>
                 <a
                   href={`${meusDados.linkedin}`}
                   target="_blank"

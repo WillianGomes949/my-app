@@ -2,6 +2,7 @@
 import React from 'react';
 import { MdCheckCircle, MdSpeed, MdDevices, MdTrendingUp, MdSecurity, MdSearch, MdBarChart, MdGroup } from 'react-icons/md';
 import { SectionTitle } from '../UI/SectionTitle';
+import BenefitsMarquee from '../UI/BenefitsMarquee';
 
 interface BenefitItem {
   icon: React.ReactNode;
@@ -75,6 +76,7 @@ export default function SiteBenefits(){
 
   return (
     <div className="relative overflow-hidden bg-will-bg-dark py-16 px-4 sm:px-6 lg:px-8">
+      <BenefitsMarquee />
       <div className="relative max-w-7xl mx-auto">
          {/* Header Section */}
         <SectionTitle subtitle='Um site moderno não é apenas uma presença online - é uma ferramenta estratégica que impulsiona 

@@ -14,7 +14,7 @@ export function SectionTitle({
   className = "",
 }: SectionTitleProps) {
   return (
-    <div className={`text-center ${className} font-tajawal max-w-5xl mx-auto leading-relaxed flex flex-col justify-center items-center` }>
+    <div className={`mb-24 md:mb-34 text-center ${className} font-tajawal max-w-5xl mx-auto leading-relaxed flex flex-col justify-center items-center` }>
       {/* Subtítulo (o texto menor em cima) */}
       <div className="mb-6">
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-will-accent/10 border border-will-accent/20 text-will-accent tracking-wide">

@@ -14,11 +14,10 @@ export default function Projects() {
         section="Portfólio"
         title="Nossos Projetos"
         subtitle="Uma coleção dos meus trabalhos mais recentes."
-        className="mb-16 mt-16"
       />
 
       {/* Grid de Projetos */}
-      <div className="mb-12">
+      <div>
         <CardProjects />
         <div className="mx-auto text-center"></div>
       </div>

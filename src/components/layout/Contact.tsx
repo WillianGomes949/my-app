@@ -95,8 +95,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-34 bg-gray-900 text-gray-100">
-      <div className="container mx-auto max-w-7xl px-4">
+    <section id="contact" className="container mx-auto py-24 md:py-34 bg-gray-900 text-gray-100">
+      <div className="container mx-auto px-4">
         <SectionTitle
             section="Contato"
             subtitle="Pronto para ter um site que traz resultados? Me mande uma mensagem. Entre em contato e vamos conversar sobre seu projeto."

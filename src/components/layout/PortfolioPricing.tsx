@@ -10,7 +10,7 @@ import PayGrid from "../UI/PayGrid";
 export default function PortfolioPricing() {
   return (
     <section className="min-h-screen bg-gray-900 text-gray-100 antialiased py-24 md:py-34">
-      <div className="md:max-w-7xl mx-auto px-2 md:px-6 py-12">
+      <div className="container mx-auto px-2 md:px-6 py-12">
         {/* =========================================
             HEADER & DESTAQUES
            ========================================= */}

@@ -5,7 +5,7 @@ import { meusDados } from "@/data/db";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center px-6 py-24 md:py-34 group relative overflow-hidden gap-4 md:gap-8">
+    <section className="container flex flex-col items-center justify-center px-6 py-24 md:py-34 group relative overflow-hidden gap-4 md:gap-8 mx-auto">
       {/* Badge de Destaque */}
       <div className="mb-6 mt-6">
         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-will-accent/10 border border-will-accent/20 text-will-accent text-sm font-medium animate-fade-in-up tracking-wide">

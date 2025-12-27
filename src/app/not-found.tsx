@@ -4,7 +4,7 @@ import { HiHome } from 'react-icons/hi';
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-gray-900 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-center">
+    <div className="container mx-auto min-h-screen bg-gray-900 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-center">
       
 
       {/* Título de Erro */}
@@ -18,7 +18,7 @@ export default function NotFound() {
       </h2>
 
       {/* Texto Descritivo */}
-      <p className="text-gray-400 text-lg md:text-xl max-w-md mb-8">
+      <p className="text-gray-400 text-lg md:text-xl  mb-8">
         Ops! Parece que a página que você está procurando foi deletada ou nunca existiu.
       </p>
 

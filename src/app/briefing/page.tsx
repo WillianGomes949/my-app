@@ -14,7 +14,7 @@ export default function BriefingPage() {
         subtitle="Compartilhe os detalhes do seu projeto para que eu possa entender suas necessidades e objetivos. Quanto mais informações você fornecer, mais precisa será a minha proposta."
         className="pt-16 mb-12"
       />
-      <div className="container mx-auto  pb-16 max-w-4xl flex flex-col gap-8 ">
+      <div className="container mx-auto  pb-16 flex flex-col gap-8 ">
         <ProjectBriefingForm />
         <PayGrid/>
       </div>

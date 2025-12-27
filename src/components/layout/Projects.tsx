@@ -7,12 +7,12 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-24 md:py-34 px-2 md:px-6 to-gray-900 max-w-7xl mx-auto relative overflow-hidden"
+      className="container mx-auto py-24 md:py-34 px-2 md:px-6 to-gray-900 relative overflow-hidden"
     >
       {/* Header da Seção */}
       <SectionTitle
         section="Portfólio"
-        title="Nossoas Projetos"
+        title="Nossos Projetos"
         subtitle="Uma coleção dos meus trabalhos mais recentes."
         className="mb-16 mt-16"
       />

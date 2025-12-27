@@ -36,7 +36,7 @@ export default function StackMarquee() {
   ];
 
   return (
-    <div className="w-full h-12 py-16 sm:py-20 md:py-24 flex justify-center items-center overflow-hidden relative">
+    <div className="container mx-auto w-full h-12 py-16 sm:py-20 md:py-24 flex justify-center items-center overflow-hidden relative">
       
       <div className="w-11/12 md:max-w-7xl mx-auto px-2 sm:px-4 md:px-6 mask-x-from-90% mask-x-to-95%">
         <div className="overflow-hidden">

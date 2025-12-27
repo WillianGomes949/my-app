@@ -6,12 +6,14 @@ import Projects from "@/components/layout/Projects";
 import Contact from "@/components/layout/Contact";
 import StackMarquee from "@/components/UI/StackMarquee";
 import PayGrid from "@/components/UI/PayGrid";
+import SiteBenefits from "@/components/layout/SiteBenefits";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <StackMarquee />
+      <SiteBenefits/>
       <About />
       <Projects />
       <Contact />

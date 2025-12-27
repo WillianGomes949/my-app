@@ -120,16 +120,16 @@ export default function BenefitsMarquee() {
   ];
 
   return (
-    <div className="w-full py-12 md:py-20 lg:py-24 flex justify-center items-center overflow-hidden bg-gradient-to-b from-will-bg-dark via-gray-900/30 to-will-bg-dark">
+    <div className="w-full py-12 md:py-20 lg:py-24 flex justify-center items-center overflow-hidden bg-linear-to-b from-will-bg-dark via-gray-900/30 to-will-bg-dark">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
         <div className="text-center mb-10 md:mb-16 px-4">
-          <div className="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-gradient-to-r from-will-primary/20 to-will-accent/20 border border-will-primary/30 mb-4">
+          <div className="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-linear-to-r from-will-primary/20 to-will-accent/20 border border-will-primary/30 mb-4">
             <span className="text-sm font-medium text-will-light">VANTAGENS</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat mb-3 md:mb-5">
-            <span className="bg-gradient-to-r from-will-primary via-will-secondary to-will-accent bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-will-primary via-will-secondary to-will-accent bg-clip-text text-transparent">
               Benefícios Exclusivos
             </span>{" "}
             para Seu Negócio
@@ -141,8 +141,8 @@ export default function BenefitsMarquee() {
 
         {/* Gradientes nas bordas */}
         <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-20 md:w-32 bg-gradient-to-r from-will-bg-dark via-will-bg-dark/95 to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-20 md:w-32 bg-gradient-to-l from-will-bg-dark via-will-bg-dark/95 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-20 md:w-32 bg-linear-to-r from-will-bg-dark via-will-bg-dark/95 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-20 md:w-32 bg-linear-to-l from-will-bg-dark via-will-bg-dark/95 to-transparent z-10 pointer-events-none"></div>
 
           {/* Marquee Principal */}
           <div className="overflow-hidden">
@@ -154,10 +154,10 @@ export default function BenefitsMarquee() {
                 >
                   <div className="relative group">
                     {/* Card */}
-                    <div className={`flex flex-col items-center justify-center p-4 sm:p-5 md:p-6 rounded-xl md:rounded-2xl bg-gray-800/20 backdrop-blur-sm border border-gray-700/30 hover:border-gray-600/50 transition-all duration-500 min-w-[140px] sm:min-w-[160px] md:min-w-[180px] lg:min-w-[200px] h-[140px] sm:h-[160px] md:h-[180px] lg:h-[200px] group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-gray-900/50`}>
+                    <div className={`flex flex-col items-center justify-center p-4 sm:p-5 md:p-6 rounded-xl md:rounded-2xl bg-gray-800/20 backdrop-blur-sm border border-gray-700/30 hover:border-gray-600/50 transition-all duration-500 min-w-[140px] sm:min-w-40 md:min-w-[180px] lg:min-w-[200px] h-[140px] sm:h-40 md:h-[180px] lg:h-[200px] group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-gray-900/50`}>
                       
                       {/* Ícone com gradiente */}
-                      <div className={`mb-3 sm:mb-4 p-2.5 sm:p-3 md:p-4 rounded-full bg-gradient-to-br ${item.color} bg-opacity-10 group-hover:bg-opacity-20 transition-all duration-500`}>
+                      <div className={`mb-3 sm:mb-4 p-2.5 sm:p-3 md:p-4 rounded-full bg-linear-to-br ${item.color} bg-opacity-10 group-hover:bg-opacity-20 transition-all duration-500`}>
                         <item.icon className="text-2xl sm:text-3xl md:text-4xl text-white" />
                       </div>
                       
@@ -184,7 +184,7 @@ export default function BenefitsMarquee() {
                     </div>
 
                     {/* Efeito de brilho */}
-                    <div className={`absolute inset-0 rounded-xl md:rounded-2xl bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500 -z-10`}></div>
+                    <div className={`absolute inset-0 rounded-xl md:rounded-2xl bg-linear-to-br ${item.color} opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500 -z-10`}></div>
                   </div>
                 </div>
               ))}
@@ -194,8 +194,8 @@ export default function BenefitsMarquee() {
 
         {/* Segunda Linha (Versão Compacta) */}
         <div className="mt-8 md:mt-12 relative">
-          <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-20 md:w-32 bg-gradient-to-r from-will-bg-dark via-will-bg-dark/95 to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-20 md:w-32 bg-gradient-to-l from-will-bg-dark via-will-bg-dark/95 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-20 md:w-32 bg-linear-to-r from-will-bg-dark via-will-bg-dark/95 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-20 md:w-32 bg-linear-to-l from-will-bg-dark via-will-bg-dark/95 to-transparent z-10 pointer-events-none"></div>
           
           <div className="overflow-hidden">
             <div className="flex animate-scroll-reverse">
@@ -205,10 +205,10 @@ export default function BenefitsMarquee() {
                   className="shrink-0 flex items-center justify-center px-2 sm:px-3 md:px-4"
                 >
                   <div className="group">
-                    <div className="flex items-center p-3 sm:p-4 md:p-5 rounded-lg md:rounded-xl bg-gray-800/10 hover:bg-gray-800/30 transition-all duration-300 min-w-[160px] sm:min-w-[180px] md:min-w-[200px] h-[60px] sm:h-[70px] md:h-[80px] border border-gray-700/20 group-hover:border-gray-600/40">
+                    <div className="flex items-center p-3 sm:p-4 md:p-5 rounded-lg md:rounded-xl bg-gray-800/10 hover:bg-gray-800/30 transition-all duration-300 min-w-40 sm:min-w-[180px] md:min-w-[200px] h-[60px] sm:h-[70px] md:h-20 border border-gray-700/20 group-hover:border-gray-600/40">
                       
                       {/* Ícone pequeno */}
-                      <div className={`p-2 rounded-lg bg-gradient-to-br ${item.color} bg-opacity-10 mr-3 sm:mr-4`}>
+                      <div className={`p-2 rounded-lg bg-linear-to-br ${item.color} bg-opacity-10 mr-3 sm:mr-4`}>
                         <item.icon className="text-lg sm:text-xl text-white" />
                       </div>
                       
